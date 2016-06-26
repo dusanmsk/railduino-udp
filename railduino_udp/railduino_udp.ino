@@ -150,11 +150,11 @@ void readInputs() {
 }
 
 void sendInputOn(int input) {
-  sendUDP("rail" + boardAddressStr + " i" + String(input, DEC) + " on");
+  sendUDP("rail" + boardAddressStr + " i" + String(input, DEC) + " 1");
 }
 
 void sendInputOff(int input) {
-  sendUDP("rail" + boardAddressStr + " i" + String(input, DEC) + " off");
+  sendUDP("rail" + boardAddressStr + " i" + String(input, DEC) + " 0");
 }
 
 void sendUDP(String message) {
