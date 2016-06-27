@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ControlList Version="111" NextObj="95" NextConst="1" NextNote="1" NextMem="1">
-	<C Type="Document" V="109" U="0e05abcc-01ba-305f-ffff92e55d8d5f35" Title="Bez názvu" ConfigVersion="7040414" PaperFormat="2" Font="Arial" FontSize="8" SPSfreq="100" OpenIsHigh="false" Date="2016-06-26 12:24:45" DateS="236175885" Town="Vídeň" Ctry="" Latitude="48.2" Longitude="13.36" Tel="+420 380 429 011 / +421 233 872 141" EMail="podpora@loxone.cz" Web="www.loxone.com" Logo="" uuidNotifications="0e05abcc-01b9-305e-ffff92e55d8d5f35" Currency="€" UpdTime="120" NumO="401">
+<ControlList Version="111" NextObj="97" NextConst="1" NextNote="1" NextMem="1">
+	<C Type="Document" V="109" U="0e05abcc-01ba-305f-ffff92e55d8d5f35" Title="Bez názvu" ConfigVersion="7040414" PaperFormat="2" Font="Arial" FontSize="8" SPSfreq="100" OpenIsHigh="false" Date="2016-06-27 23:34:14" DateS="236302454" Town="Vídeň" Ctry="" Latitude="48.2" Longitude="13.36" Tel="+420 380 429 011 / +421 233 872 141" EMail="podpora@loxone.cz" Web="www.loxone.com" Logo="" uuidNotifications="0e05abcc-01b9-305e-ffff92e55d8d5f35" Currency="€" UpdTime="120" NumO="405">
 		<C Type="IconCaptionState" V="109" U="0e05abcc-01bb-3061-ffff92e55d8d5f35" Title="Symboly statusů">
 			<C Type="IconState" V="109" U="00000000-0000-0001-2200000000000000" Title="Nepřiřazeno"/>
 			<C Type="IconState" V="109" U="00000000-0000-0002-2200000000000000" Title="Velká chyba" Ix="1"/>
@@ -661,147 +661,159 @@
 			</C>
 			<C Type="VirtualInCaption" V="109" U="0e05abcc-01f9-32c1-ffff92e55d8d5f35" Title="Virtuální vstupy">
 				<C Type="VirtualUdpIn" IName="VUI1" V="109" U="0e05ac27-02bd-34e9-ffff92e55d8d5f35" Title="Railduino udp input broadcasting bus" Address="" Port="55555">
-					<C Type="VirtualUdpInCmd" IName="VCI1" V="109" U="0e0877df-0015-1107-ffff92e55d8d5f35" Title="railduino-0 di-1" Nio="2" WF="16400" Check="rail0 i1 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI1" V="109" U="0e0877df-0015-1107-ffff92e55d8d5f35" Title="railduino-0 di-1" Nio="2" WF="16" Check="rail0 i1 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e0877df-0015-1105-ffff6e47a57e0a50"/>
 						<Co K="Q" U="0e0877df-0015-1106-ffff6e47a57e0a50"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI2" V="109" U="0e126f96-0172-13da-ffff92e55d8d5f35" Title="railduino-0 di-2" Nio="2" WF="16400" Check="rail0 i2 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI2" V="109" U="0e126f96-0172-13da-ffff92e55d8d5f35" Title="railduino-0 di-2" Nio="2" WF="16" Check="rail0 i2 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f96-0172-13d8-ffff295c32904664"/>
 						<Co K="Q" U="0e126f96-0172-13d9-ffff295c32904664"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI3" V="109" U="0e126f96-006f-1607-ffff92e55d8d5f35" Title="railduino-0 di-3" Nio="2" WF="16400" Check="rail0 i3 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI3" V="109" U="0e126f96-006f-1607-ffff92e55d8d5f35" Title="railduino-0 di-3" Nio="2" WF="16" Check="rail0 i3 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f96-006f-1605-ffffb7d8da8e7624"/>
 						<Co K="Q" U="0e126f96-006f-1606-ffffb7d8da8e7624"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI4" V="109" U="0e126f98-0112-1837-ffff92e55d8d5f35" Title="railduino-0 di-4" Nio="2" WF="16400" Check="rail0 i4 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI4" V="109" U="0e126f98-0112-1837-ffff92e55d8d5f35" Title="railduino-0 di-4" Nio="2" WF="16" Check="rail0 i4 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f98-0112-1835-ffffa36cb36b4a86"/>
 						<Co K="Q" U="0e126f98-0112-1836-ffffa36cb36b4a86"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI5" V="109" U="0e126f98-0377-1a6a-ffff92e55d8d5f35" Title="railduino-0 di-5" Nio="2" WF="16400" Check="rail0 i5 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI5" V="109" U="0e126f98-0377-1a6a-ffff92e55d8d5f35" Title="railduino-0 di-5" Nio="2" WF="16" Check="rail0 i5 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f98-0377-1a68-ffff65e31bca6782"/>
 						<Co K="Q" U="0e126f98-0377-1a69-ffff65e31bca6782"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI6" V="109" U="0e126f99-0199-1ca0-ffff92e55d8d5f35" Title="railduino-0 di-6" Nio="2" WF="16400" Check="rail0 i6 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI6" V="109" U="0e126f99-0199-1ca0-ffff92e55d8d5f35" Title="railduino-0 di-6" Nio="2" WF="16" Check="rail0 i6 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f99-0199-1c9e-fffff6a8cb696dfc"/>
 						<Co K="Q" U="0e126f99-0199-1c9f-fffff6a8cb696dfc"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI7" V="109" U="0e126f99-018d-1ed9-ffff92e55d8d5f35" Title="railduino-0 di-7" Nio="2" WF="16400" Check="rail0 i7 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI7" V="109" U="0e126f99-018d-1ed9-ffff92e55d8d5f35" Title="railduino-0 di-7" Nio="2" WF="16" Check="rail0 i7 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f99-018d-1ed7-ffffb2a627bc2618"/>
 						<Co K="Q" U="0e126f99-018d-1ed8-ffffb2a627bc2618"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI8" V="109" U="0e126f9b-0073-2115-ffff92e55d8d5f35" Title="railduino-0 di-8" Nio="2" WF="16400" Check="rail0 i8 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI8" V="109" U="0e126f9b-0073-2115-ffff92e55d8d5f35" Title="railduino-0 di-8" Nio="2" WF="16" Check="rail0 i8 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f9b-0073-2113-ffffda9292cf4f58"/>
 						<Co K="Q" U="0e126f9b-0073-2114-ffffda9292cf4f58"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI9" V="109" U="0e126f9b-030c-2354-ffff92e55d8d5f35" Title="railduino-0 di-9" Nio="2" WF="16400" Check="rail0 i9 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI9" V="109" U="0e126f9b-030c-2354-ffff92e55d8d5f35" Title="railduino-0 di-9" Nio="2" WF="16" Check="rail0 i9 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f9b-030c-2352-ffff3560ba0d1d40"/>
 						<Co K="Q" U="0e126f9b-030c-2353-ffff3560ba0d1d40"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI10" V="109" U="0e126f9b-02b1-2596-ffff92e55d8d5f35" Title="railduino-0 di-10" Nio="2" WF="16400" Check="rail0 i10 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI10" V="109" U="0e126f9b-02b1-2596-ffff92e55d8d5f35" Title="railduino-0 di-10" Nio="2" WF="16" Check="rail0 i10 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f9b-02b1-2594-fffff27618961ef0"/>
 						<Co K="Q" U="0e126f9b-02b1-2595-fffff27618961ef0"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI11" V="109" U="0e126f9c-01d1-27db-ffff92e55d8d5f35" Title="railduino-0 di-11" Nio="2" WF="16400" Check="rail0 i11 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI11" V="109" U="0e126f9c-01d1-27db-ffff92e55d8d5f35" Title="railduino-0 di-11" Nio="2" WF="16" Check="rail0 i11 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f9c-01d1-27d9-ffffb4b94389f71c"/>
 						<Co K="Q" U="0e126f9c-01d1-27da-ffffb4b94389f71c"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI12" V="109" U="0e126f9e-007f-2a23-ffff92e55d8d5f35" Title="railduino-0 di-12" Nio="2" WF="16400" Check="rail0 i12 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI12" V="109" U="0e126f9e-007f-2a23-ffff92e55d8d5f35" Title="railduino-0 di-12" Nio="2" WF="16" Check="rail0 i12 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f9e-007f-2a21-ffff434deebd6e70"/>
 						<Co K="Q" U="0e126f9e-007f-2a22-ffff434deebd6e70"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI13" V="109" U="0e126f9e-027d-2c6e-ffff92e55d8d5f35" Title="railduino-0 di-13" Nio="2" WF="16400" Check="rail0 i13 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI13" V="109" U="0e126f9e-027d-2c6e-ffff92e55d8d5f35" Title="railduino-0 di-13" Nio="2" WF="16" Check="rail0 i13 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f9e-027d-2c6c-ffffa04c1c66cb7e"/>
 						<Co K="Q" U="0e126f9e-027d-2c6d-ffffa04c1c66cb7e"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI14" V="109" U="0e126f9e-009d-2ebc-ffff92e55d8d5f35" Title="railduino-0 di-14" Nio="2" WF="16400" Check="rail0 i14 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI14" V="109" U="0e126f9e-009d-2ebc-ffff92e55d8d5f35" Title="railduino-0 di-14" Nio="2" WF="16" Check="rail0 i14 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126f9e-009d-2eba-ffff63db86fa2f0d"/>
 						<Co K="Q" U="0e126f9e-009d-2ebb-ffff63db86fa2f0d"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI15" V="109" U="0e126fa0-003a-310d-ffff92e55d8d5f35" Title="railduino-0 di-15" Nio="2" WF="16400" Check="rail0 i15 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI15" V="109" U="0e126fa0-003a-310d-ffff92e55d8d5f35" Title="railduino-0 di-15" Nio="2" WF="16" Check="rail0 i15 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126fa0-003a-310b-ffffbe5d6f987393"/>
 						<Co K="Q" U="0e126fa0-003a-310c-ffffbe5d6f987393"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI16" V="109" U="0e126fa0-0258-3361-ffff92e55d8d5f35" Title="railduino-0 di-16" Nio="2" WF="16400" Check="rail0 i16 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI16" V="109" U="0e126fa0-0258-3361-ffff92e55d8d5f35" Title="railduino-0 di-16" Nio="2" WF="16" Check="rail0 i16 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126fa0-0258-335f-ffffb5b35d21808d"/>
 						<Co K="Q" U="0e126fa0-0258-3360-ffffb5b35d21808d"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI17" V="109" U="0e126fa1-0074-35b8-ffff92e55d8d5f35" Title="railduino-0 di-17" Nio="2" WF="16400" Check="rail0 i17 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI17" V="109" U="0e126fa1-0074-35b8-ffff92e55d8d5f35" Title="railduino-0 di-17" Nio="2" WF="16" Check="rail0 i17 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126fa1-0074-35b6-ffff437c45c03cb0"/>
 						<Co K="Q" U="0e126fa1-0074-35b7-ffff437c45c03cb0"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI18" V="109" U="0e126fa1-025a-3812-ffff92e55d8d5f35" Title="railduino-0 di-18" Nio="2" WF="16400" Check="rail0 i18 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI18" V="109" U="0e126fa1-025a-3812-ffff92e55d8d5f35" Title="railduino-0 di-18" Nio="2" WF="16" Check="rail0 i18 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126fa1-025a-3810-ffff70b1b8743aa9"/>
 						<Co K="Q" U="0e126fa1-025a-3811-ffff70b1b8743aa9"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI19" V="109" U="0e126fa1-025c-3a6f-ffff92e55d8d5f35" Title="railduino-0 di-19" Nio="2" WF="16400" Check="rail0 i19 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI19" V="109" U="0e126fa1-025c-3a6f-ffff92e55d8d5f35" Title="railduino-0 di-19" Nio="2" WF="16" Check="rail0 i19 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126fa1-025c-3a6d-ffff5f7596bc9c32"/>
 						<Co K="Q" U="0e126fa1-025c-3a6e-ffff5f7596bc9c32"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI20" V="109" U="0e126fa3-0161-3ccf-ffff92e55d8d5f35" Title="railduino-0 di-20" Nio="2" WF="16400" Check="rail0 i20 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI20" V="109" U="0e126fa3-0161-3ccf-ffff92e55d8d5f35" Title="railduino-0 di-20" Nio="2" WF="16" Check="rail0 i20 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126fa3-0161-3ccd-ffffedf13ebaccf2"/>
 						<Co K="Q" U="0e126fa3-0161-3cce-ffffedf13ebaccf2"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI21" V="109" U="0e126fa3-000e-3f32-ffff92e55d8d5f35" Title="railduino-0 di-21" Nio="2" WF="16400" Check="rail0 i21 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI21" V="109" U="0e126fa3-000e-3f32-ffff92e55d8d5f35" Title="railduino-0 di-21" Nio="2" WF="16" Check="rail0 i21 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126fa3-000e-3f30-ffff48bf66f99bda"/>
 						<Co K="Q" U="0e126fa3-000e-3f31-ffff48bf66f99bda"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI22" V="109" U="0e126fa3-0212-4198-ffff92e55d8d5f35" Title="railduino-0 di-22" Nio="2" WF="16400" Check="rail0 i22 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI22" V="109" U="0e126fa3-0212-4198-ffff92e55d8d5f35" Title="railduino-0 di-22" Nio="2" WF="16" Check="rail0 i22 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126fa3-0212-4196-ffffda841797a054"/>
 						<Co K="Q" U="0e126fa3-0212-4197-ffffda841797a054"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI23" V="109" U="0e126fa4-004b-4401-ffff92e55d8d5f35" Title="railduino-0 di-23" Nio="2" WF="16400" Check="rail0 i23 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI23" V="109" U="0e126fa4-004b-4401-ffff92e55d8d5f35" Title="railduino-0 di-23" Nio="2" WF="16" Check="rail0 i23 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126fa4-004b-43ff-ffffd1da0420ae4f"/>
 						<Co K="Q" U="0e126fa4-004b-4400-ffffd1da0420ae4f"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
-					<C Type="VirtualUdpInCmd" IName="VCI24" V="109" U="0e126fa4-0293-466d-ffff92e55d8d5f35" Title="railduino-0 di-24" Nio="2" WF="16400" Check="rail0 i24 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
+					<C Type="VirtualUdpInCmd" IName="VCI24" V="109" U="0e126fa4-0293-466d-ffff92e55d8d5f35" Title="railduino-0 di-24" Nio="2" WF="16" Check="rail0 i24 \v" Analog="true" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="1" MinTime="10">
 						<Co K="AQ" U="0e126fa4-0293-466b-ffff2dc12f95c3ca"/>
 						<Co K="Q" U="0e126fa4-0293-466c-ffff2dc12f95c3ca"/>
+						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
+						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+					<C Type="VirtualUdpInCmd" IName="VCI25" V="109" U="0e15b021-0158-0b71-ffff92e55d8d5f35" Title="temp1" Nio="2" WF="16400" Check="rail0 1wire 28bcf53008014 \v" Signed="true" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000" MinChange="1" MinTime="10">
+						<Co K="AQ" U="0e15b021-0158-0b6f-ffff8a0273835936"/>
+						<Co K="Q" U="0e15b021-0158-0b70-ffff8a0273835936"/>
+						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
+						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+					<C Type="VirtualUdpInCmd" IName="VCI26" V="109" U="0e15b066-00a9-178a-ffff92e55d8d5f35" Title="temp2" Nio="2" WF="16400" Check="rail0 1wire 2864fc3008082 \v" Signed="true" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000" MinChange="1" MinTime="10">
+						<Co K="AQ" U="0e15b066-00a9-1788-ffffcad712aea83d"/>
+						<Co K="Q" U="0e15b066-00a9-1789-ffffcad712aea83d"/>
 						<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
 					</C>
@@ -1381,6 +1393,26 @@
 			</C>
 			<C Type="Page" V="109" U="0e087804-0244-22f6-ffff92e55d8d5f35" Title="Strana 2">
 				<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
+				<C Type="InputRef" V="109" U="0e15b03e-03d5-1480-ffff92e55d8d5f35" Title="temp1" Px="8352" Py="6432" Px2="10080" Py2="6624" Cl="200,200,236" Nio="4" Ref="0e15b021-0158-0b71-ffff92e55d8d5f35" Analog="true" LinkRefType="79">
+					<Co K="AI" Nc="1" U="0e15b03e-03d5-147c-ffffe7f232bbf2cb">
+						<In Input="0e15b021-0158-0b6f-ffff8a0273835936"/>
+					</Co>
+					<Co K="I" Nc="1" U="0e15b03e-03d5-147d-ffffe7f232bbf2cb">
+						<In Input="0e15b021-0158-0b70-ffff8a0273835936"/>
+					</Co>
+					<Co K="AQ" U="0e15b03e-03d5-147e-ffffe7f232bbf2cb"/>
+					<Co K="Q" U="0e15b03e-03d5-147f-ffffe7f232bbf2cb"/>
+				</C>
+				<C Type="InputRef" V="109" U="0e15b073-0117-20b1-ffff92e55d8d5f35" Title="temp2" Px="8352" Py="7200" Px2="10080" Py2="7392" Cl="200,200,236" Nio="4" Ref="0e15b066-00a9-178a-ffff92e55d8d5f35" Analog="true" LinkRefType="79">
+					<Co K="AI" Nc="1" U="0e15b073-0117-20ad-ffff23af13824ecf">
+						<In Input="0e15b066-00a9-1788-ffffcad712aea83d"/>
+					</Co>
+					<Co K="I" Nc="1" U="0e15b073-0117-20ae-ffff23af13824ecf">
+						<In Input="0e15b066-00a9-1789-ffffcad712aea83d"/>
+					</Co>
+					<Co K="AQ" U="0e15b073-0117-20af-ffff23af13824ecf"/>
+					<Co K="Q" U="0e15b073-0117-20b0-ffff23af13824ecf"/>
+				</C>
 			</C>
 		</C>
 	</C>

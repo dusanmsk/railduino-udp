@@ -17,6 +17,9 @@
     
  */
 
+#define oneWireSleepRatio 2
+
+#include <OneWire.h>
 #include <Dhcp.h>
 #include <Dns.h>
 #include <Ethernet.h>
@@ -37,8 +40,8 @@ char inputPacketBuffer[UDP_TX_PACKET_MAX_SIZE];
 #define outputPacketBufferSize 100
 char outputPacketBuffer[outputPacketBufferSize];
 
-//#define dbg(x) Serial.println(x);
-#define dbg(x) ;
+#define dbg(x) Serial.println(x);
+//#define dbg(x) ;
 
 EthernetUDP udpRecv;
 EthernetUDP udpSend;
@@ -126,10 +129,108 @@ void loop() {
   
   // process relay commands
   processCommands();
+
+  // process onewire
+  processOnewire();
   
   delay(10);
 
 }
+
+
+OneWire  ds(9);
+byte oneWireData[12];
+byte oneWireAddr[8];
+enum OneWireConversationState {SEARCH, INIT, READ};
+OneWireConversationState oneWireConversationState = SEARCH;
+unsigned long nextOneWireNextTriggerTime = millis();
+
+void oneWireSleep(unsigned long timeMs) {
+  nextOneWireNextTriggerTime = millis() + timeMs * oneWireSleepRatio;  
+}
+
+String oneWireAddressToString(byte addr[]) {
+  String s = "";
+  for(int i = 0; i < 8; i++) {
+    s += String(addr[i], HEX);
+  }
+  return s;
+}
+
+void processOnewire() {
+
+  // handle "sleeps"
+  if( millis() < nextOneWireNextTriggerTime ) {
+    return; 
+  }
+
+  switch(oneWireConversationState) {
+    case SEARCH:
+      if ( !ds.search(oneWireAddr) )  {
+        ds.reset_search();
+        oneWireSleep(250);
+        return;
+      }
+      oneWireConversationState = INIT;
+      return;
+
+    case INIT:
+      ds.reset();
+      ds.select(oneWireAddr);
+      ds.write(0x44, 1);        // start conversion, with parasite power on at the end
+      oneWireConversationState = READ;
+      oneWireSleep(1000);
+      return;
+
+    case READ:
+      byte type_s;
+      byte present = ds.reset();
+      ds.select(oneWireAddr);    
+      ds.write(0xBE);                     // Read Scratchpad
+      for ( int i = 0; i < 9; i++) {          // we need 9 bytes
+          oneWireData[i] = ds.read();
+      }      
+      if ( OneWire::crc8(oneWireData, 8) == oneWireData[8] ) {
+        switch (oneWireAddr[0]) {
+          case 0x10:  // DS18S20/DS1820
+            type_s = 1;
+            break;
+          case 0x28:  // DS18B20
+            type_s = 0;
+            break;
+          case 0x22:  // DS1822
+            type_s = 0;
+            break;
+          default:
+            dbg("Unknown 1wire device");
+            return;
+        } 
+      
+        int16_t raw = (oneWireData[1] << 8) | oneWireData[0];
+        if (type_s) {
+          raw = raw << 3; // 9 bit resolution default
+          if (oneWireData[7] == 0x10) {
+            // "count remain" gives full 12 bit resolution
+            raw = (raw & 0xFFF0) + 12 - oneWireData[6];
+          }
+        } else {
+          byte cfg = (oneWireData[4] & 0x60);
+          // at lower res, the low bits are undefined, so let's zero them
+          if (cfg == 0x00) raw = raw & ~7;  // 9 bit resolution, 93.75 ms
+          else if (cfg == 0x20) raw = raw & ~3; // 10 bit res, 187.5 ms
+          else if (cfg == 0x40) raw = raw & ~1; // 11 bit res, 375 ms
+          //// default is 12 bit resolution, 750 ms conversion time
+        }
+        float celsius = (float)raw / 16.0;
+        sendUDP("rail" + boardAddressStr + " 1wire " + oneWireAddressToString(oneWireAddr) + " " + String(celsius, 2));
+      }
+      oneWireConversationState = SEARCH;
+      oneWireSleep(1000);
+      return;
+  }
+  
+}
+
 
 void readInputs() {
 
