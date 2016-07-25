@@ -107,10 +107,10 @@ void setup() {
 
    // initialize ethernet
    mac[5] = (0xED + boardAddress);
+   listenIpAddress = IPAddress(192, 168, 150, 150 + boardAddress);
    Ethernet.begin(mac, listenIpAddress);
    udpRecv.begin(listenPort);    
    udpSend.begin(sendPort);    
-   listenIpAddress = IPAddress(192, 168, 150, 150 + boardAddress);
 
   dbg("Railduino address: ");
   dbg(boardAddressStr);
