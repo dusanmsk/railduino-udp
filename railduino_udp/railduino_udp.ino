@@ -137,17 +137,13 @@ void loop() {
 
 }
 
-
 OneWire  ds(9);
 byte oneWireData[12];
 byte oneWireAddr[8];
 enum OneWireConversationState {SEARCH, INIT, READ};
 OneWireConversationState oneWireConversationState = SEARCH;
-unsigned long nextOneWireNextTriggerTime = millis();
-
-void oneWireSleep(unsigned long timeMs) {
-  nextOneWireNextTriggerTime = millis() + timeMs * oneWireSleepRatio;  
-}
+unsigned long oneWireSleepTimeMs = 0;
+unsigned long lastOneWireMillis = 0;
 
 String oneWireAddressToString(byte addr[]) {
   String s = "";
@@ -157,10 +153,15 @@ String oneWireAddressToString(byte addr[]) {
   return s;
 }
 
+void oneWireSleep(unsigned long timeMs) {
+  lastOneWireMillis = millis();
+  oneWireSleepTimeMs = timeMs * oneWireSleepRatio;
+}
+
 void processOnewire() {
 
   // handle "sleeps"
-  if( millis() < nextOneWireNextTriggerTime ) {
+  if( millis() - lastOneWireMillis < oneWireSleepTimeMs ) {
     return; 
   }
 
