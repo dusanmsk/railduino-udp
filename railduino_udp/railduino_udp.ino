@@ -18,6 +18,7 @@
  */
 
 #define oneWireSleepRatio 2
+#define repeatedInputsSleepRatio 5
 
 #include <OneWire.h>
 #include <Dhcp.h>
@@ -58,6 +59,32 @@ String boardAddressStr;
 
 String relayOnCommands[numOfRelays];
 String relayOffCommands[numOfRelays];
+
+class Timer {
+  private:
+    unsigned long timestampLastHitMs;
+    unsigned long sleepTimeMs;
+  public:
+    boolean isOver();
+    void sleep(unsigned long sleepTimeMs);
+};
+
+/**
+ * Return true if specified time passed from last pass, else return false
+ */
+boolean Timer::isOver() {
+  if( millis() - timestampLastHitMs < sleepTimeMs ) {
+    return false; 
+  }    
+  timestampLastHitMs = millis();
+  return true;
+}
+
+void Timer::sleep(unsigned long sleepTimeMs) {
+  this->sleepTimeMs = sleepTimeMs;
+  timestampLastHitMs = millis();
+}
+
 
 void setup() {
   Serial.begin(9600);
@@ -125,6 +152,7 @@ void setup() {
 void loop() {
 
   // read inputs and send updates
+  // TODO zasekava sa (!!)
   readInputs();
   
   // process relay commands
@@ -132,9 +160,22 @@ void loop() {
 
   // process onewire
   processOnewire();
-  
+
+  processRepeatedInputs();
+
   delay(10);
 
+}
+
+Timer repeatedInputsTimer;
+void processRepeatedInputs() {
+  if(!repeatedInputsTimer.isOver()) {
+    return;
+  }
+  
+  dbg("TODO repeated inputs");
+
+  repeatedInputsTimer.sleep(repeatedInputsSleepRatio * 1000);
 }
 
 OneWire  ds(9);
@@ -142,8 +183,6 @@ byte oneWireData[12];
 byte oneWireAddr[8];
 enum OneWireConversationState {SEARCH, INIT, READ};
 OneWireConversationState oneWireConversationState = SEARCH;
-unsigned long oneWireSleepTimeMs = 0;
-unsigned long lastOneWireMillis = 0;
 
 String oneWireAddressToString(byte addr[]) {
   String s = "";
@@ -153,23 +192,21 @@ String oneWireAddressToString(byte addr[]) {
   return s;
 }
 
-void oneWireSleep(unsigned long timeMs) {
-  lastOneWireMillis = millis();
-  oneWireSleepTimeMs = timeMs * oneWireSleepRatio;
-}
 
+Timer oneWireTimer;
 void processOnewire() {
 
-  // handle "sleeps"
-  if( millis() - lastOneWireMillis < oneWireSleepTimeMs ) {
-    return; 
+  if(!oneWireTimer.isOver()) {
+    return;
   }
-
+  
+  dbg("processing onewire")
+  
   switch(oneWireConversationState) {
     case SEARCH:
       if ( !ds.search(oneWireAddr) )  {
         ds.reset_search();
-        oneWireSleep(250);
+        oneWireTimer.sleep(250);
         return;
       }
       oneWireConversationState = INIT;
@@ -180,7 +217,7 @@ void processOnewire() {
       ds.select(oneWireAddr);
       ds.write(0x44, 1);        // start conversion, with parasite power on at the end
       oneWireConversationState = READ;
-      oneWireSleep(1000);
+      oneWireTimer.sleep(1000);
       return;
 
     case READ:
@@ -226,7 +263,7 @@ void processOnewire() {
         sendUDP("rail" + boardAddressStr + " 1wire " + oneWireAddressToString(oneWireAddr) + " " + String(celsius, 2));
       }
       oneWireConversationState = SEARCH;
-      oneWireSleep(1000);
+      oneWireTimer.sleep(1000);
       return;
   }
   
@@ -240,7 +277,6 @@ void readInputs() {
     int value = digitalRead(pin);
     int oldValue = inputStatus[i];
     inputStatus[i] = value;
-
     // note values are inverted due to pullup
     if(value < oldValue) {
       sendInputOn(i+1);
