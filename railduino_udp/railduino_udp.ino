@@ -328,14 +328,15 @@ void readInputs() {
 }
 
 void sendInputOn(int input) {
-    sendUDP("rail" + boardAddressStr + " i" + String(input, DEC) + " 1");
+    sendUDP("i" + String(input, DEC) + " 1");
 }
 
 void sendInputOff(int input) {
-    sendUDP("rail" + boardAddressStr + " i" + String(input, DEC) + " 0");
+    sendUDP("i" + String(input, DEC) + " 0");
 }
 
 void sendUDP(String message) {
+    message = "rail" + boardAddressStr + " " + message;
     udpSend.beginPacket(sendIpAddress, loxonePort);
     message.toCharArray(outputPacketBuffer, outputPacketBufferSize);
     udpSend.write(outputPacketBuffer, message.length());
@@ -379,7 +380,7 @@ void processConfigurationCommand(String cmd) {
 
 
 void processPingCommand(String cmd) {
-    blinkStatusLed(2000);
+    sendUDP("pong");
 }
 
 void processCommands() {
