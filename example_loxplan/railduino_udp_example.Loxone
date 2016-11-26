@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ControlList Version="126" LxAV="5" NextObj="110" NextConst="1" NextNote="1" NextMem="3">
-	<C Type="Document" V="112" U="0e05abcc-01ba-305f-ffff92e55d8d5f35" Title="Bez názvu" ConfigVersion="8011111" PaperFormat="2" SPSfreq="100" OpenIsHigh="false" Date="2016-11-20 21:41:18" CDate="" BDate="" DateS="248910078" Town="Vídeň" Ctry="" Latitude="48.2" Longitude="13.36" Tel="+420 380 429 011 / +421 233 872 141" EMail="podpora@loxone.cz" Web="www.loxone.com" Logo="" uuidNotifications="0e05abcc-01b9-305e-ffff92e55d8d5f35" Currency="€" UpdTime="120" CrashL="true" NumO="428">
+	<C Type="Document" V="112" U="0e05abcc-01ba-305f-ffff92e55d8d5f35" Title="Bez názvu" ConfigVersion="8011111" PaperFormat="2" SPSfreq="100" OpenIsHigh="false" Date="2016-11-20 21:48:08" CDate="" BDate="" DateS="248910488" Town="Vídeň" Ctry="" Latitude="48.2" Longitude="13.36" Tel="+420 380 429 011 / +421 233 872 141" EMail="podpora@loxone.cz" Web="www.loxone.com" Logo="" uuidNotifications="0e05abcc-01b9-305e-ffff92e55d8d5f35" Currency="€" UpdTime="120" CrashL="true" NumO="428">
 		<C Type="LoxCaption" V="112" U="0ed44f6f-0087-05b0-ffff92e55d8d5f35" Title="Symboly" Cl="0,0,0" WF="16384" CaptionType="5">
 			<C Type="IconCaptionPlace" V="112" U="0e05abcc-01bc-3065-ffff92e55d8d5f35" Title="Symboly místností" WF="16384">
 				<C Type="IconPlace" V="112" U="00000000-0000-0001-2100000000000000" Title="Nepřiřazeno" WF="16384"/>
@@ -949,7 +949,7 @@
 		<C Type="Program" V="112" U="0e05abcc-0202-333c-ffff92e55d8d5f35" Title="Loxone Miniserver" Ref="0e05abcc-01f8-32b1-ffff92e55d8d5f35" WF="16384">
 			<C Type="Page" V="112" U="0e05abcc-0202-333e-ffff92e55d8d5f35" Title="Strana" WF="16384">
 				<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
-				<C Type="InputRef" V="112" U="0e12763f-00dd-6981-ffff92e55d8d5f35" Title="railduino-0 di-1" Px="2880" Py="14784" Px2="4992" Py2="14976" Cl="238,238,238" Nio="4" Ref="0e0877df-0015-1107-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e12763f-00dd-6981-ffff92e55d8d5f35" Title="railduino-0 di-1" Px="2880" Py="14784" Px2="4992" Py2="14976" Cl="238,238,238" Nio="4" Ref="0e0877df-0015-1107-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e12763f-00dd-697d-ffff5556f5a59c90">
 						<In Input="0e0877df-0015-1105-ffff6e47a57e0a50"/>
 					</Co>
@@ -959,7 +959,7 @@
 					<Co K="AQ" U="0e12763f-00dd-697f-ffff5556f5a59c90"/>
 					<Co K="Q" U="0e12763f-00dd-6980-ffff5556f5a59c90"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e127644-007c-6bac-ffff92e55d8d5f35" Title="railduino-0 di-2" Px="2880" Py="14976" Px2="4992" Py2="15168" Cl="238,238,238" Nio="4" Ref="0e126f96-0172-13da-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e127644-007c-6bac-ffff92e55d8d5f35" Title="railduino-0 di-2" Px="2880" Py="14976" Px2="4992" Py2="15168" Cl="238,238,238" Nio="4" Ref="0e126f96-0172-13da-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e127644-007c-6ba8-ffff15977231b4d7">
 						<In Input="0e126f96-0172-13d8-ffff295c32904664"/>
 					</Co>
@@ -969,7 +969,7 @@
 					<Co K="AQ" U="0e127644-007c-6baa-ffff15977231b4d7"/>
 					<Co K="Q" U="0e127644-007c-6bab-ffff15977231b4d7"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e127655-013a-8047-ffff92e55d8d5f35" Title="railduino-0 di-3" Px="2880" Py="13536" Px2="4992" Py2="13728" Cl="238,238,238" Nio="4" Ref="0e126f96-006f-1607-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e127655-013a-8047-ffff92e55d8d5f35" Title="railduino-0 di-3" Px="2880" Py="13536" Px2="4992" Py2="13728" Cl="238,238,238" Nio="4" Ref="0e126f96-006f-1607-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e127655-013a-8043-ffff1e3f916e9167">
 						<In Input="0e126f96-006f-1605-ffffb7d8da8e7624"/>
 					</Co>
@@ -979,7 +979,7 @@
 					<Co K="AQ" U="0e127655-013a-8045-ffff1e3f916e9167"/>
 					<Co K="Q" U="0e127655-013a-8046-ffff1e3f916e9167"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e12765a-00af-8505-ffff92e55d8d5f35" Title="railduino-0 di-4" Px="2880" Py="13728" Px2="4992" Py2="13920" Cl="238,238,238" Nio="4" Ref="0e126f98-0112-1837-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e12765a-00af-8505-ffff92e55d8d5f35" Title="railduino-0 di-4" Px="2880" Py="13728" Px2="4992" Py2="13920" Cl="238,238,238" Nio="4" Ref="0e126f98-0112-1837-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e12765a-00af-8501-ffff33ed2b625b49">
 						<In Input="0e126f98-0112-1835-ffffa36cb36b4a86"/>
 					</Co>
@@ -989,7 +989,7 @@
 					<Co K="AQ" U="0e12765a-00af-8503-ffff33ed2b625b49"/>
 					<Co K="Q" U="0e12765a-00af-8504-ffff33ed2b625b49"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e127661-030e-89cd-ffff92e55d8d5f35" Title="railduino-0 di-5" Px="2880" Py="12288" Px2="4992" Py2="12480" Cl="238,238,238" Nio="4" Ref="0e126f98-0377-1a6a-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e127661-030e-89cd-ffff92e55d8d5f35" Title="railduino-0 di-5" Px="2880" Py="12288" Px2="4992" Py2="12480" Cl="238,238,238" Nio="4" Ref="0e126f98-0377-1a6a-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e127661-030e-89c9-ffff951191a6585f">
 						<In Input="0e126f98-0377-1a68-ffff65e31bca6782"/>
 					</Co>
@@ -999,7 +999,7 @@
 					<Co K="AQ" U="0e127661-030e-89cb-ffff951191a6585f"/>
 					<Co K="Q" U="0e127661-030e-89cc-ffff951191a6585f"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e127664-0327-8c3c-ffff92e55d8d5f35" Title="railduino-0 di-6" Px="2880" Py="12480" Px2="4992" Py2="12672" Cl="238,238,238" Nio="4" Ref="0e126f99-0199-1ca0-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e127664-0327-8c3c-ffff92e55d8d5f35" Title="railduino-0 di-6" Px="2880" Py="12480" Px2="4992" Py2="12672" Cl="238,238,238" Nio="4" Ref="0e126f99-0199-1ca0-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e127664-0327-8c38-fffffbd025942d20">
 						<In Input="0e126f99-0199-1c9e-fffff6a8cb696dfc"/>
 					</Co>
@@ -1009,7 +1009,7 @@
 					<Co K="AQ" U="0e127664-0327-8c3a-fffffbd025942d20"/>
 					<Co K="Q" U="0e127664-0327-8c3b-fffffbd025942d20"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e12766c-00ec-9118-ffff92e55d8d5f35" Title="railduino-0 di-7" Px="2880" Py="11040" Px2="4992" Py2="11232" Cl="238,238,238" Nio="4" Ref="0e126f99-018d-1ed9-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e12766c-00ec-9118-ffff92e55d8d5f35" Title="railduino-0 di-7" Px="2880" Py="11040" Px2="4992" Py2="11232" Cl="238,238,238" Nio="4" Ref="0e126f99-018d-1ed9-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e12766c-00ec-9114-ffffe95931a11464">
 						<In Input="0e126f99-018d-1ed7-ffffb2a627bc2618"/>
 					</Co>
@@ -1019,7 +1019,7 @@
 					<Co K="AQ" U="0e12766c-00ec-9116-ffffe95931a11464"/>
 					<Co K="Q" U="0e12766c-00ec-9117-ffffe95931a11464"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e12766f-012c-9391-ffff92e55d8d5f35" Title="railduino-0 di-8" Px="2880" Py="11232" Px2="4992" Py2="11424" Cl="238,238,238" Nio="4" Ref="0e126f9b-0073-2115-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e12766f-012c-9391-ffff92e55d8d5f35" Title="railduino-0 di-8" Px="2880" Py="11232" Px2="4992" Py2="11424" Cl="238,238,238" Nio="4" Ref="0e126f9b-0073-2115-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e12766f-012c-938d-ffffe86f866f9a11">
 						<In Input="0e126f9b-0073-2113-ffffda9292cf4f58"/>
 					</Co>
@@ -1029,7 +1029,7 @@
 					<Co K="AQ" U="0e12766f-012c-938f-ffffe86f866f9a11"/>
 					<Co K="Q" U="0e12766f-012c-9390-ffffe86f866f9a11"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e1276de-03c7-00e2-ffff92e55d8d5f35" Title="railduino-0 di-9" Px="2880" Py="9792" Px2="4992" Py2="9984" Cl="238,238,238" Nio="4" Ref="0e126f9b-030c-2354-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e1276de-03c7-00e2-ffff92e55d8d5f35" Title="railduino-0 di-9" Px="2880" Py="9792" Px2="4992" Py2="9984" Cl="238,238,238" Nio="4" Ref="0e126f9b-030c-2354-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e1276de-03c7-00de-ffff11e8bb6a5658">
 						<In Input="0e126f9b-030c-2352-ffff3560ba0d1d40"/>
 					</Co>
@@ -1039,7 +1039,7 @@
 					<Co K="AQ" U="0e1276de-03c7-00e0-ffff11e8bb6a5658"/>
 					<Co K="Q" U="0e1276de-03c7-00e1-ffff11e8bb6a5658"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e1276e1-0378-036e-ffff92e55d8d5f35" Title="railduino-0 di-10" Px="2880" Py="9984" Px2="4992" Py2="10176" Cl="238,238,238" Nio="4" Ref="0e126f9b-02b1-2596-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e1276e1-0378-036e-ffff92e55d8d5f35" Title="railduino-0 di-10" Px="2880" Py="9984" Px2="4992" Py2="10176" Cl="238,238,238" Nio="4" Ref="0e126f9b-02b1-2596-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e1276e1-0378-036a-ffff7bbc1a8dbd03">
 						<In Input="0e126f9b-02b1-2594-fffff27618961ef0"/>
 					</Co>
@@ -1049,7 +1049,7 @@
 					<Co K="AQ" U="0e1276e1-0378-036c-ffff7bbc1a8dbd03"/>
 					<Co K="Q" U="0e1276e1-0378-036d-ffff7bbc1a8dbd03"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e1276ee-000c-0b09-ffff92e55d8d5f35" Title="railduino-0 di-11" Px="2880" Py="8544" Px2="4992" Py2="8736" Cl="238,238,238" Nio="4" Ref="0e126f9c-01d1-27db-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e1276ee-000c-0b09-ffff92e55d8d5f35" Title="railduino-0 di-11" Px="2880" Py="8544" Px2="4992" Py2="8736" Cl="238,238,238" Nio="4" Ref="0e126f9c-01d1-27db-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e1276ee-000c-0b05-ffff1996c00faa77">
 						<In Input="0e126f9c-01d1-27d9-ffffb4b94389f71c"/>
 					</Co>
@@ -1059,7 +1059,7 @@
 					<Co K="AQ" U="0e1276ee-000c-0b07-ffff1996c00faa77"/>
 					<Co K="Q" U="0e1276ee-000c-0b08-ffff1996c00faa77"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e1276f1-01d5-0d9f-ffff92e55d8d5f35" Title="railduino-0 di-12" Px="2880" Py="8736" Px2="4992" Py2="8928" Cl="238,238,238" Nio="4" Ref="0e126f9e-007f-2a23-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e1276f1-01d5-0d9f-ffff92e55d8d5f35" Title="railduino-0 di-12" Px="2880" Py="8736" Px2="4992" Py2="8928" Cl="238,238,238" Nio="4" Ref="0e126f9e-007f-2a23-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e1276f1-01d5-0d9b-ffff152fd0d1169c">
 						<In Input="0e126f9e-007f-2a21-ffff434deebd6e70"/>
 					</Co>
@@ -1069,7 +1069,7 @@
 					<Co K="AQ" U="0e1276f1-01d5-0d9d-ffff152fd0d1169c"/>
 					<Co K="Q" U="0e1276f1-01d5-0d9e-ffff152fd0d1169c"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e1276fe-0303-1a76-ffff92e55d8d5f35" Title="railduino-0 di-13" Px="2880" Py="7296" Px2="4992" Py2="7488" Cl="238,238,238" Nio="4" Ref="0e126f9e-027d-2c6e-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e1276fe-0303-1a76-ffff92e55d8d5f35" Title="railduino-0 di-13" Px="2880" Py="7296" Px2="4992" Py2="7488" Cl="238,238,238" Nio="4" Ref="0e126f9e-027d-2c6e-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e1276fe-0303-1a72-ffff1669aed27c6b">
 						<In Input="0e126f9e-027d-2c6c-ffffa04c1c66cb7e"/>
 					</Co>
@@ -1079,7 +1079,7 @@
 					<Co K="AQ" U="0e1276fe-0303-1a74-ffff1669aed27c6b"/>
 					<Co K="Q" U="0e1276fe-0303-1a75-ffff1669aed27c6b"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e127703-0033-1d16-ffff92e55d8d5f35" Title="railduino-0 di-14" Px="2880" Py="7488" Px2="4992" Py2="7680" Cl="238,238,238" Nio="4" Ref="0e126f9e-009d-2ebc-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e127703-0033-1d16-ffff92e55d8d5f35" Title="railduino-0 di-14" Px="2880" Py="7488" Px2="4992" Py2="7680" Cl="238,238,238" Nio="4" Ref="0e126f9e-009d-2ebc-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e127703-0033-1d12-ffff9e66635cd2bd">
 						<In Input="0e126f9e-009d-2eba-ffff63db86fa2f0d"/>
 					</Co>
@@ -1089,7 +1089,7 @@
 					<Co K="AQ" U="0e127703-0033-1d14-ffff9e66635cd2bd"/>
 					<Co K="Q" U="0e127703-0033-1d15-ffff9e66635cd2bd"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e12770b-01c2-24ed-ffff92e55d8d5f35" Title="railduino-0 di-15" Px="2880" Py="6048" Px2="4992" Py2="6240" Cl="238,238,238" Nio="4" Ref="0e126fa0-003a-310d-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e12770b-01c2-24ed-ffff92e55d8d5f35" Title="railduino-0 di-15" Px="2880" Py="6048" Px2="4992" Py2="6240" Cl="238,238,238" Nio="4" Ref="0e126fa0-003a-310d-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e12770b-01c2-24e9-ffffdf5fc5d21f46">
 						<In Input="0e126fa0-003a-310b-ffffbe5d6f987393"/>
 					</Co>
@@ -1099,7 +1099,7 @@
 					<Co K="AQ" U="0e12770b-01c2-24eb-ffffdf5fc5d21f46"/>
 					<Co K="Q" U="0e12770b-01c2-24ec-ffffdf5fc5d21f46"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e12770e-028a-2797-ffff92e55d8d5f35" Title="railduino-0 di-16" Px="2880" Py="6240" Px2="4992" Py2="6432" Cl="238,238,238" Nio="4" Ref="0e126fa0-0258-3361-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e12770e-028a-2797-ffff92e55d8d5f35" Title="railduino-0 di-16" Px="2880" Py="6240" Px2="4992" Py2="6432" Cl="238,238,238" Nio="4" Ref="0e126fa0-0258-3361-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e12770e-028a-2793-ffffaa7b5940b8b8">
 						<In Input="0e126fa0-0258-335f-ffffb5b35d21808d"/>
 					</Co>
@@ -1109,7 +1109,7 @@
 					<Co K="AQ" U="0e12770e-028a-2795-ffffaa7b5940b8b8"/>
 					<Co K="Q" U="0e12770e-028a-2796-ffffaa7b5940b8b8"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e127716-00bd-2f8c-ffff92e55d8d5f35" Title="railduino-0 di-17" Px="2880" Py="4800" Px2="4992" Py2="4992" Cl="238,238,238" Nio="4" Ref="0e126fa1-0074-35b8-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e127716-00bd-2f8c-ffff92e55d8d5f35" Title="railduino-0 di-17" Px="2880" Py="4800" Px2="4992" Py2="4992" Cl="238,238,238" Nio="4" Ref="0e126fa1-0074-35b8-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e127716-00bd-2f88-ffffc9b51d0db77e">
 						<In Input="0e126fa1-0074-35b6-ffff437c45c03cb0"/>
 					</Co>
@@ -1119,7 +1119,7 @@
 					<Co K="AQ" U="0e127716-00bd-2f8a-ffffc9b51d0db77e"/>
 					<Co K="Q" U="0e127716-00bd-2f8b-ffffc9b51d0db77e"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e127719-02ed-3240-ffff92e55d8d5f35" Title="railduino-0 di-18" Px="2880" Py="4992" Px2="4992" Py2="5184" Cl="238,238,238" Nio="4" Ref="0e126fa1-025a-3812-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e127719-02ed-3240-ffff92e55d8d5f35" Title="railduino-0 di-18" Px="2880" Py="4992" Px2="4992" Py2="5184" Cl="238,238,238" Nio="4" Ref="0e126fa1-025a-3812-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e127719-02ed-323c-ffffe3c4c2d79dad">
 						<In Input="0e126fa1-025a-3810-ffff70b1b8743aa9"/>
 					</Co>
@@ -1129,7 +1129,7 @@
 					<Co K="AQ" U="0e127719-02ed-323e-ffffe3c4c2d79dad"/>
 					<Co K="Q" U="0e127719-02ed-323f-ffffe3c4c2d79dad"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e127726-0201-3fee-ffff92e55d8d5f35" Title="railduino-0 di-19" Px="2880" Py="3552" Px2="4992" Py2="3744" Cl="238,238,238" Nio="4" Ref="0e126fa1-025c-3a6f-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e127726-0201-3fee-ffff92e55d8d5f35" Title="railduino-0 di-19" Px="2880" Py="3552" Px2="4992" Py2="3744" Cl="238,238,238" Nio="4" Ref="0e126fa1-025c-3a6f-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e127726-0201-3fea-ffffaba2d6a1f9f4">
 						<In Input="0e126fa1-025c-3a6d-ffff5f7596bc9c32"/>
 					</Co>
@@ -1139,7 +1139,7 @@
 					<Co K="AQ" U="0e127726-0201-3fec-ffffaba2d6a1f9f4"/>
 					<Co K="Q" U="0e127726-0201-3fed-ffffaba2d6a1f9f4"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e12772c-017f-42ba-ffff92e55d8d5f35" Title="railduino-0 di-20" Px="2880" Py="3744" Px2="4992" Py2="3936" Cl="238,238,238" Nio="4" Ref="0e126fa3-0161-3ccf-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e12772c-017f-42ba-ffff92e55d8d5f35" Title="railduino-0 di-20" Px="2880" Py="3744" Px2="4992" Py2="3936" Cl="238,238,238" Nio="4" Ref="0e126fa3-0161-3ccf-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e12772c-017f-42b6-fffff516f38a6c42">
 						<In Input="0e126fa3-0161-3ccd-ffffedf13ebaccf2"/>
 					</Co>
@@ -1149,7 +1149,7 @@
 					<Co K="AQ" U="0e12772c-017f-42b8-fffff516f38a6c42"/>
 					<Co K="Q" U="0e12772c-017f-42b9-fffff516f38a6c42"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e127731-0071-4850-ffff92e55d8d5f35" Title="railduino-0 di-21" Px="2880" Py="2304" Px2="4992" Py2="2496" Cl="238,238,238" Nio="4" Ref="0e126fa3-000e-3f32-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e127731-0071-4850-ffff92e55d8d5f35" Title="railduino-0 di-21" Px="2880" Py="2304" Px2="4992" Py2="2496" Cl="238,238,238" Nio="4" Ref="0e126fa3-000e-3f32-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e127731-0071-484c-ffff41bb16de6db7">
 						<In Input="0e126fa3-000e-3f30-ffff48bf66f99bda"/>
 					</Co>
@@ -1159,7 +1159,7 @@
 					<Co K="AQ" U="0e127731-0071-484e-ffff41bb16de6db7"/>
 					<Co K="Q" U="0e127731-0071-484f-ffff41bb16de6db7"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e127737-0222-4df0-ffff92e55d8d5f35" Title="railduino-0 di-22" Px="2880" Py="2496" Px2="4992" Py2="2688" Cl="238,238,238" Nio="4" Ref="0e126fa3-0212-4198-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e127737-0222-4df0-ffff92e55d8d5f35" Title="railduino-0 di-22" Px="2880" Py="2496" Px2="4992" Py2="2688" Cl="238,238,238" Nio="4" Ref="0e126fa3-0212-4198-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e127737-0222-4dec-fffffc7d9ff6ab8f">
 						<In Input="0e126fa3-0212-4196-ffffda841797a054"/>
 					</Co>
@@ -1169,7 +1169,7 @@
 					<Co K="AQ" U="0e127737-0222-4dee-fffffc7d9ff6ab8f"/>
 					<Co K="Q" U="0e127737-0222-4def-fffffc7d9ff6ab8f"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e12776a-0143-6fde-ffff92e55d8d5f35" Title="railduino-0 di-24" Px="2880" Py="1248" Px2="4992" Py2="1440" Cl="238,238,238" Nio="4" Ref="0e126fa4-0293-466d-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e12776a-0143-6fde-ffff92e55d8d5f35" Title="railduino-0 di-24" Px="2880" Py="1248" Px2="4992" Py2="1440" Cl="238,238,238" Nio="4" Ref="0e126fa4-0293-466d-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e12776a-0143-6fda-ffffb7b1f2d79f90">
 						<In Input="0e126fa4-0293-466b-ffff2dc12f95c3ca"/>
 					</Co>
@@ -1179,7 +1179,7 @@
 					<Co K="AQ" U="0e12776a-0143-6fdc-ffffb7b1f2d79f90"/>
 					<Co K="Q" U="0e12776a-0143-6fdd-ffffb7b1f2d79f90"/>
 				</C>
-				<C Type="InputRef" V="112" U="0e127767-039e-6cf7-ffff92e55d8d5f35" Title="railduino-0 di-23" Px="2880" Py="1056" Px2="4992" Py2="1248" Cl="238,238,238" Nio="4" Ref="0e126fa4-004b-4401-ffff92e55d8d5f35" WF="147456" Analog="true" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0e127767-039e-6cf7-ffff92e55d8d5f35" Title="railduino-0 di-23" Px="2880" Py="1056" Px2="4992" Py2="1248" Cl="238,238,238" Nio="4" Ref="0e126fa4-004b-4401-ffff92e55d8d5f35" WF="131072" Analog="true" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0e127767-039e-6cf3-ffff556fa3f5e358">
 						<In Input="0e126fa4-004b-43ff-ffffd1da0420ae4f"/>
 					</Co>
@@ -1189,7 +1189,7 @@
 					<Co K="AQ" U="0e127767-039e-6cf5-ffff556fa3f5e358"/>
 					<Co K="Q" U="0e127767-039e-6cf6-ffff556fa3f5e358"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e127698-03c7-ab1a-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="14304" Px2="8640" Py2="15360" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e127698-03c7-ab1a-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="14304" Px2="8640" Py2="15360" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e127698-03c7-ab14-ffff6e848ebcc1b6">
 						<In Input="0e12763f-00dd-697f-ffff5556f5a59c90"/>
 					</Co>
@@ -1202,7 +1202,7 @@
 					<Co K="Q" U="0e127698-03c7-ab19-ffff6e848ebcc1b6"/>
 					<IoData Visu="true" Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e12769b-0298-b1eb-ffff979f50d3b736" Title="2-tlačítko" Px="5952" Py="13056" Px2="8640" Py2="14112" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e12769b-0298-b1eb-ffff979f50d3b736" Title="2-tlačítko" Px="5952" Py="13056" Px2="8640" Py2="14112" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e12769b-0298-b1ec-ffff979f50d3b736">
 						<In Input="0e127655-013a-8045-ffff1e3f916e9167"/>
 					</Co>
@@ -1215,7 +1215,7 @@
 					<Co K="Q" U="0e12769b-0298-b1f1-ffff979f50d3b736"/>
 					<IoData Visu="true" Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e12769d-0320-b443-ffffdd9c0f18878b" Title="2-tlačítko" Px="5952" Py="11808" Px2="8640" Py2="12864" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e12769d-0320-b443-ffffdd9c0f18878b" Title="2-tlačítko" Px="5952" Py="11808" Px2="8640" Py2="12864" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e12769d-0320-b444-ffffdd9c0f18878b">
 						<In Input="0e127661-030e-89cb-ffff951191a6585f"/>
 					</Co>
@@ -1228,7 +1228,7 @@
 					<Co K="Q" U="0e12769d-0320-b449-ffffdd9c0f18878b"/>
 					<IoData Visu="true" Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e1276a2-033e-b6a2-ffff311f814ebed4" Title="2-tlačítko" Px="5952" Py="10560" Px2="8640" Py2="11616" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e1276a2-033e-b6a2-ffff311f814ebed4" Title="2-tlačítko" Px="5952" Py="10560" Px2="8640" Py2="11616" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e1276a2-033e-b6a3-ffff311f814ebed4">
 						<In Input="0e12766c-00ec-9116-ffffe95931a11464"/>
 					</Co>
@@ -1241,7 +1241,7 @@
 					<Co K="Q" U="0e1276a2-033e-b6a8-ffff311f814ebed4"/>
 					<IoData Visu="true" Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e1276c3-0129-e338-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="4320" Px2="8640" Py2="5376" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e1276c3-0129-e338-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="4320" Px2="8640" Py2="5376" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e1276c3-0129-e332-ffff3f2c9d8f19ca">
 						<In Input="0e127716-00bd-2f8a-ffffc9b51d0db77e"/>
 					</Co>
@@ -1254,7 +1254,7 @@
 					<Co K="Q" U="0e1276c3-0129-e337-ffff3f2c9d8f19ca"/>
 					<IoData Visu="true" Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e1276c3-02a8-e59f-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="5568" Px2="8640" Py2="6624" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e1276c3-02a8-e59f-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="5568" Px2="8640" Py2="6624" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e1276c3-02a8-e599-ffff07e8d58e56d6">
 						<In Input="0e12770b-01c2-24eb-ffffdf5fc5d21f46"/>
 					</Co>
@@ -1267,7 +1267,7 @@
 					<Co K="Q" U="0e1276c3-02a8-e59e-ffff07e8d58e56d6"/>
 					<IoData Visu="true" Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e1276c5-0060-e80d-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="6816" Px2="8640" Py2="7872" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e1276c5-0060-e80d-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="6816" Px2="8640" Py2="7872" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e1276c5-0060-e807-ffff66ff056dfa77">
 						<In Input="0e1276fe-0303-1a74-ffff1669aed27c6b"/>
 					</Co>
@@ -1280,7 +1280,7 @@
 					<Co K="Q" U="0e1276c5-0060-e80c-ffff66ff056dfa77"/>
 					<IoData Visu="true" Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e1276c5-01a3-ea82-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="8064" Px2="8640" Py2="9120" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e1276c5-01a3-ea82-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="8064" Px2="8640" Py2="9120" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e1276c5-01a3-ea7c-ffff619efb97dd2b">
 						<In Input="0e1276ee-000c-0b07-ffff1996c00faa77"/>
 					</Co>
@@ -1293,7 +1293,7 @@
 					<Co K="Q" U="0e1276c5-01a3-ea81-ffff619efb97dd2b"/>
 					<IoData Visu="true" Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e1276c5-02df-ecfe-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="9312" Px2="8640" Py2="10368" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e1276c5-02df-ecfe-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="9312" Px2="8640" Py2="10368" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e1276c5-02de-ecf8-ffff8d07abb71ff4">
 						<In Input="0e1276de-03c7-00e0-ffff11e8bb6a5658"/>
 					</Co>
@@ -1306,7 +1306,7 @@
 					<Co K="Q" U="0e1276c5-02df-ecfd-ffff8d07abb71ff4"/>
 					<IoData Visu="true" Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e12771b-0283-34f5-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="3072" Px2="8640" Py2="4128" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e12771b-0283-34f5-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="3072" Px2="8640" Py2="4128" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e12771b-0283-34ef-ffff2d0a88bc43ba">
 						<In Input="0e127726-0201-3fec-ffffaba2d6a1f9f4"/>
 					</Co>
@@ -1319,7 +1319,7 @@
 					<Co K="Q" U="0e12771b-0283-34f4-ffff2d0a88bc43ba"/>
 					<IoData Visu="true" Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e12771c-008d-37b1-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="1824" Px2="8640" Py2="2880" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e12771c-008d-37b1-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="1824" Px2="8640" Py2="2880" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e12771c-008d-37ab-ffff8a09b6669fc8">
 						<In Input="0e127731-0071-484e-ffff41bb16de6db7"/>
 					</Co>
@@ -1332,7 +1332,7 @@
 					<Co K="Q" U="0e12771c-008d-37b0-ffff8a09b6669fc8"/>
 					<IoData Visu="true" Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 				</C>
-				<C Type="PushButton2" V="112" U="0e127761-0058-673f-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="576" Px2="8640" Py2="1632" Cl="131,184,23" Nio="6" WF="16384">
+				<C Type="PushButton2" V="112" U="0e127761-0058-673f-ffff92e55d8d5f35" Title="2-tlačítko" Px="5952" Py="576" Px2="8640" Py2="1632" Cl="131,184,23" Nio="6">
 					<Co K="InputTriggerOn" Nc="1" U="0e127761-0058-6739-ffff2b5ac7466467">
 						<In Input="0e127767-039e-6cf5-ffff556fa3f5e358"/>
 					</Co>
@@ -1451,7 +1451,7 @@
 					<Co K="AQ" U="0ed60d49-0285-3976-ffff481436aa729d"/>
 					<Co K="Q" U="0ed60d49-0285-3977-ffff481436aa729d"/>
 				</C>
-				<C Type="InputRef" V="112" U="0ed60d7b-02b3-5974-ffff92e55d8d5f35" Title="Railduino 0 pong" Px="1824" Py="4320" Px2="3936" Py2="4512" Cl="238,238,238" Nio="4" Ref="0ed60d5e-007e-4c9c-ffff92e55d8d5f35" WF="163840" LinkRefType="79">
+				<C Type="InputRef" V="112" U="0ed60d7b-02b3-5974-ffff92e55d8d5f35" Title="Railduino 0 pong" Px="1824" Py="4320" Px2="3936" Py2="4512" Cl="238,238,238" Nio="4" Ref="0ed60d5e-007e-4c9c-ffff92e55d8d5f35" WF="131072" LinkRefType="79">
 					<Co K="AI" Nc="1" U="0ed60d7b-02b3-5970-ffffaa926382df49">
 						<In Input="0ed60d5e-007e-4c9a-ffffd293236f4292"/>
 					</Co>
@@ -1505,7 +1505,7 @@
 					<IoData Cr="0e05abcc-01c1-30d9-ffff92e55d8d5f35" Pr="0e05abcc-01d6-3173-ffff92e55d8d5f35" Ugr="0e05abcc-01f8-32ab-ffff92e55d8d5f35" Ugx="0e05abcc-01f8-32ab-ffff92e55d8d5f35"/>
 					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
 				</C>
-				<C Type="Counter" V="112" U="0ed60eff-00fd-ca6d-ffff92e55d8d5f35" Title="O107" Px="4896" Py="3840" Px2="6240" Py2="4704" Cl="131,184,23" Nio="7" WF="131072">
+				<C Type="Counter" V="112" U="0ed60eff-00fd-ca6d-ffff92e55d8d5f35" Title="O107" Px="4896" Py="3840" Px2="6240" Py2="4704" Cl="131,184,23" Nio="7">
 					<Co K="Trigger" Nc="1" U="0ed60eff-00fd-ca66-ffff8f0d418c2b3c">
 						<In Input="0ed60d93-02d5-6cf3-ffff2f915cd3d4d0"/>
 					</Co>
@@ -1531,8 +1531,8 @@
 				</C>
 				<C Type="Text" V="112" U="0ed6108a-0164-5631-ffff92e55d8d5f35" Title="Poznámka" Px="3744" Py="960" Px2="7945" Py2="1164" Cl="255,249,196" Text="Generate impulses for &apos;ping&apos; (default 10 seconds)"/>
 				<C Type="Text" V="112" U="0ed610aa-00a8-6a31-ffff5241301d5524" Title="Poznámka" Px="3744" Py="2208" Px2="5082" Py2="2412" Cl="255,249,196" Text="Ping railduino 0"/>
-				<C Type="Text" V="112" U="0ed610bb-0376-7ae1-ffff637b5f9bdd26" Title="Poznámka" Px="3744" Py="3360" Px2="12551" Py2="3756" Cl="255,249,196" Text="Check railduino0 is responding. If it doesn&apos;t responds 6-times (what means 6*10 seconds), turn alarm on.
-Whenever it responds, reset alarm."/>
+				<C Type="Text" V="112" U="0ed610bb-0376-7ae1-ffff637b5f9bdd26" Title="Poznámka" Px="3744" Py="3360" Px2="12603" Py2="3756" Cl="255,249,196" Text="Check railduino 0 is responding. If it doesn&apos;t responds 6-times (what means 6*10 seconds), turn alarm on.
+Whenever it responds, turn alarm off."/>
 				<C Type="OutputRef" V="112" U="0ed60d2a-00c3-1ce7-ffff92e55d8d5f35" Title="Ping all arduinos" Px="4896" Py="2688" Px2="7008" Py2="2880" Cl="238,238,238" Nio="2" Ref="0ed48ea0-00da-1d06-ffff92e55d8d5f35" WF="16384" LinkRefType="74">
 					<Co K="AI" Nc="1" U="0ed60d2a-00c3-1ce5-ffff8f5c359c82af">
 						<In Input="0ed60d49-0285-3977-ffff481436aa729d"/>
