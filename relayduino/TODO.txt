@@ -1,0 +1,2 @@
+TODO:
+presunut dip switch na hlavny board - riziko ze shield s nim nevojde vedla ethernetu.
