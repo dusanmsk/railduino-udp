@@ -1,3 +1,0 @@
-TODO:
-ok - presunut dip switch na hlavny board - riziko ze shield s nim nevojde vedla ethernetu.
-ok - presunut napajanie vedla dip switchu
