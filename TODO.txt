@@ -1,1 +1,0 @@
-- repeat DI status after some time (for long-connected contacts such as window detectors etc ...)
