@@ -1,0 +1,1083 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlList Version="126" LxAV="5" NextObj="17" NextConst="1" NextNote="1" NextMem="1">
+	<C Type="Document" V="112" U="0f4f2104-0316-81f8-ffff50dfea156200" Title="Railduino UDP 485" WF="16384" ConfigVersion="8011111" PaperFormat="2" SPSfreq="100" OpenIsHigh="false" Date="2017-02-22 13:22:13" CDate="" BDate="" DateS="257001733" Town="Vídeň" Ctry="" Latitude="48.2" Longitude="13.36" Creator="Ing. Pavel Sedláček" Tel="+420 777 729 833" EMail="info@sedtronic.cz" Web="www.sedtronic.cz" Logo="" uuidNotifications="0f4f2104-0315-81f7-ffff50dfea156200" Currency="€" UpdTime="120" CrashL="true" NumO="375">
+		<C Type="LoxCaption" V="112" U="0f4f2104-0317-81fa-ffff50dfea156200" Title="Symboly" Cl="0,0,0" WF="16384" CaptionType="5">
+			<C Type="IconCaptionState" V="112" U="0f4f2104-0318-81fc-ffff50dfea156200" Title="Symboly statusů" WF="16384">
+				<C Type="IconState" V="112" U="00000000-0000-0001-2200000000000000" Title="Nepřiřazeno" WF="16384"/>
+				<C Type="IconState" V="112" U="00000000-0000-0002-2200000000000000" Title="Velká chyba" WF="16384" Ix="1"/>
+				<C Type="IconState" V="112" U="00000000-0000-0003-2200000000000000" Title="Malá chyba" WF="16384" Ix="2"/>
+				<C Type="IconState" V="112" U="00000000-0000-0004-2200000000000000" Title="Varování" WF="16384" Ix="3"/>
+				<C Type="IconState" V="112" U="00000000-0000-0005-2200000000000000" Title="Informace" WF="16384" Ix="4"/>
+				<C Type="IconState" V="112" U="00000000-0000-0006-2200000000000000" Title="Neutralní" WF="16384" Ix="5"/>
+				<C Type="IconState" V="112" U="00000000-0000-0007-2200000000000000" Title="Aktivní" WF="16384" Ix="6"/>
+				<C Type="IconState" V="112" U="00000000-0000-0008-2200000000000000" Title="Neaktivní" WF="16384" Ix="7"/>
+				<C Type="IconState" V="112" U="00000000-0000-0009-2200000000000000" Title="Alarm" WF="16384" Ix="8"/>
+				<C Type="IconState" V="112" U="00000000-0000-000a-2200000000000000" Title="Zapnuto" WF="16384" Ix="9"/>
+				<C Type="IconState" V="112" U="00000000-0000-000b-2200000000000000" Title="Zastřeženo" WF="16384" Ix="10"/>
+				<C Type="IconState" V="112" U="00000000-0000-000c-2200000000000000" Title="Nahoře" WF="16384" Ix="11"/>
+				<C Type="IconState" V="112" U="00000000-0000-000d-2200000000000000" Title="Uprostřed" WF="16384" Ix="12"/>
+				<C Type="IconState" V="112" U="00000000-0000-000e-2200000000000000" Title="Dole" WF="16384" Ix="13"/>
+				<C Type="IconState" V="112" U="00000000-0000-000f-2200000000000000" Title="Nahoru" WF="16384" Ix="14"/>
+				<C Type="IconState" V="112" U="00000000-0000-0010-2200000000000000" Title="Zavřeno" WF="16384" Ix="15"/>
+				<C Type="IconState" V="112" U="00000000-0000-0011-2200000000000000" Title="Zap." WF="16384" Ix="16"/>
+				<C Type="IconState" V="112" U="00000000-0000-0012-2200000000000000" Title="Vyp." WF="16384" Ix="17"/>
+				<C Type="IconState" V="112" U="00000000-0000-0013-2200000000000000" Title="Plný" WF="16384" Ix="18"/>
+				<C Type="IconState" V="112" U="00000000-0000-0014-2200000000000000" Title="Prázdný" WF="16384" Ix="19"/>
+				<C Type="IconState" V="112" U="00000000-0000-0015-2200000000000000" Title="Hotovo" WF="16384" Ix="20"/>
+				<C Type="IconState" V="112" U="00000000-0000-0016-2200000000000000" Title="V práci" WF="16384" Ix="21"/>
+				<C Type="IconState" V="112" U="00000000-0000-0017-2200000000000000" Title="Horko" WF="16384" Ix="22"/>
+				<C Type="IconState" V="112" U="00000000-0000-0018-2200000000000000" Title="Zima" WF="16384" Ix="23"/>
+				<C Type="IconState" V="112" U="00000000-0000-0019-2200000000000000" Title="Webpage" WF="16384" Ix="24"/>
+			</C>
+			<C Type="IconCaptionCat" V="112" U="0f4f2104-0319-81fe-ffff50dfea156200" Title="Symboly kategorií" WF="16384">
+				<C Type="IconCat" V="112" U="00000000-0000-0001-2000000000000000" Title="Nepřiřazeno" WF="16384"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0002-2000000000000000" Title="Osvětlení" WF="16384" Ix="1"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0003-2000000000000000" Title="Žaluzie" WF="16384" Ix="2"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0004-2000000000000000" Title="Topení" WF="16384" Ix="3"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0005-2000000000000000" Title="Podnebí" WF="16384" Ix="4"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0006-2000000000000000" Title="Zvuk" WF="16384" Ix="5"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0007-2000000000000000" Title="Čidlo" WF="16384" Ix="6"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0008-2000000000000000" Title="Hlavice" WF="16384" Ix="7"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0009-2000000000000000" Title="Teplota" WF="16384" Ix="8"/>
+				<C Type="IconCat" V="112" U="00000000-0000-000a-2000000000000000" Title="Detektor" WF="16384" Ix="9"/>
+				<C Type="IconCat" V="112" U="00000000-0000-000b-2000000000000000" Title="Ventilace" WF="16384" Ix="10"/>
+				<C Type="IconCat" V="112" U="00000000-0000-000c-2000000000000000" Title="Okno" WF="16384" Ix="11"/>
+				<C Type="IconCat" V="112" U="00000000-0000-000d-2000000000000000" Title="Monitorování" WF="16384" Ix="12"/>
+				<C Type="IconCat" V="112" U="00000000-0000-000e-2000000000000000" Title="Chlazeni" WF="16384" Ix="13"/>
+				<C Type="IconCat" V="112" U="00000000-0000-000f-2000000000000000" Title="Alarm" WF="16384" Ix="14"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0010-2000000000000000" Title="Brána" WF="16384" Ix="15"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0011-2000000000000000" Title="Wellness" WF="16384" Ix="16"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0012-2000000000000000" Title="Technická místnost" WF="16384" Ix="17"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0013-2000000000000000" Title="Audio 2" WF="16384" Ix="18"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0014-2000000000000000" Title="Osvětlení" WF="16384" Ix="19"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0015-2000000000000000" Title="Teplota" WF="16384" Ix="20"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0016-2000000000000000" Title="Detektor" WF="16384" Ix="21"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0017-2000000000000000" Title="Alarm 2" WF="16384" Ix="22"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0018-2000000000000000" Title="Audio 3" WF="16384" Ix="23"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0019-2000000000000000" Title="Okno" WF="16384" Ix="24"/>
+				<C Type="IconCat" V="112" U="00000000-0000-001a-2000000000000000" Title="Topení" WF="16384" Ix="25"/>
+				<C Type="IconCat" V="112" U="00000000-0000-001b-2000000000000000" Title="Ventil topení 2" WF="16384" Ix="26"/>
+				<C Type="IconCat" V="112" U="00000000-0000-001c-2000000000000000" Title="Technická místnost 2" WF="16384" Ix="27"/>
+				<C Type="IconCat" V="112" U="00000000-0000-001d-2000000000000000" Title="Brána" WF="16384" Ix="28"/>
+				<C Type="IconCat" V="112" U="00000000-0000-001e-2000000000000000" Title="Serverovna" WF="16384" Ix="29"/>
+				<C Type="IconCat" V="112" U="00000000-0000-001f-2000000000000000" Title="Serverovna" WF="16384" Ix="30"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0020-2000000000000000" Title="Přístup" WF="16384" Ix="31"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0021-2000000000000000" Title="Přístup" WF="16384" Ix="32"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0022-2000000000000000" Title="Spotřebiče" WF="16384" Ix="33"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0023-2000000000000000" Title="Spotřebiče" WF="16384" Ix="34"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0024-2000000000000000" Title="Závlaha" WF="16384" Ix="35"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0025-2000000000000000" Title="Závlaha" WF="16384" Ix="36"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0026-2000000000000000" Title="Fotovoltaika" WF="16384" Ix="37"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0027-2000000000000000" Title="Monitorování" WF="16384" Ix="38"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0028-2000000000000000" Title="Přístup" WF="16384" Ix="39"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0029-2000000000000000" Title="Čas" WF="16384" Ix="40"/>
+				<C Type="IconCat" V="112" U="00000000-0000-002a-2000000000000000" Title="Elektromobil" WF="16384" Ix="41"/>
+				<C Type="IconCat" V="112" U="00000000-0000-002b-2000000000000000" Title="Slunce" WF="16384" Ix="42"/>
+				<C Type="IconCat" V="112" U="00000000-0000-002c-2000000000000000" Title="Budík" WF="16384" Ix="43"/>
+				<C Type="IconCat" V="112" U="00000000-0000-002d-2000000000000000" Title="Proud" WF="16384" Ix="44"/>
+				<C Type="IconCat" V="112" U="00000000-0000-002e-2000000000000000" Title="Info" WF="16384" Ix="45"/>
+				<C Type="IconCat" V="112" U="00000000-0000-002f-2000000000000000" Title="Cirkulační čerpadlo" WF="16384" Ix="46"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0030-2000000000000000" Title="Tepelné čerpadlo" WF="16384" Ix="47"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0031-2000000000000000" Title="Počasí" WF="16384" Ix="48"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0032-2000000000000000" Title="Vlhkost" WF="16384" Ix="49"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0033-2000000000000000" Title="Multimedia" WF="16384" Ix="50"/>
+				<C Type="IconCat" V="112" U="00000000-0000-0034-2000000000000000" Title="Energie" WF="16384" Ix="51"/>
+			</C>
+			<C Type="IconCaptionPlace" V="112" U="0f4f2104-0319-8200-ffff50dfea156200" Title="Symboly místností" WF="16384">
+				<C Type="IconPlace" V="112" U="00000000-0000-0001-2100000000000000" Title="Nepřiřazeno" WF="16384"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0002-2100000000000000" Title="Hala v přízemí" WF="16384" Ix="1"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0003-2100000000000000" Title="Hala v prvním patře" WF="16384" Ix="2"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0004-2100000000000000" Title="Obývací pokoj" WF="16384" Ix="3"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0005-2100000000000000" Title="Kuchyně" WF="16384" Ix="4"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0006-2100000000000000" Title="Koupelna v přízemí" WF="16384" Ix="5"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0007-2100000000000000" Title="Koupelna v prvním patře" WF="16384" Ix="6"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0008-2100000000000000" Title="Ložnice" WF="16384" Ix="7"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0009-2100000000000000" Title="Dětský pokoj" WF="16384" Ix="8"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-000a-2100000000000000" Title="WC" WF="16384" Ix="9"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-000b-2100000000000000" Title="Šatna" WF="16384" Ix="10"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-000c-2100000000000000" Title="Garáž" WF="16384" Ix="11"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-000d-2100000000000000" Title="Veranda" WF="16384" Ix="12"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-000e-2100000000000000" Title="Schodiště" WF="16384" Ix="13"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-000f-2100000000000000" Title="Sauna" WF="16384" Ix="14"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0010-2100000000000000" Title="Zimní zahrada" WF="16384" Ix="15"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0011-2100000000000000" Title="Pracovna" WF="16384" Ix="16"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0012-2100000000000000" Title="Herna" WF="16384" Ix="17"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0013-2100000000000000" Title="Prádelna" WF="16384" Ix="18"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0014-2100000000000000" Title="Místnost na žehlení" WF="16384" Ix="19"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0015-2100000000000000" Title="Posilovna" WF="16384" Ix="20"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0016-2100000000000000" Title="Terasa" WF="16384" Ix="21"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0017-2100000000000000" Title="Zahrada" WF="16384" Ix="22"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0018-2100000000000000" Title="Jídelna" WF="16384" Ix="23"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0019-2100000000000000" Title="Podkroví" WF="16384" Ix="24"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-001a-2100000000000000" Title="Sklep" WF="16384" Ix="25"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-001b-2100000000000000" Title="Bar" WF="16384" Ix="26"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-001c-2100000000000000" Title="Koupelna v přízemí" WF="16384" Ix="27"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-001d-2100000000000000" Title="Šatna" WF="16384" Ix="28"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-001e-2100000000000000" Title="Koupelna v přízemí" WF="16384" Ix="29"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-001f-2100000000000000" Title="Koupelna v přízemí" WF="16384" Ix="30"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0020-2100000000000000" Title="Kuchyně" WF="16384" Ix="31"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0021-2100000000000000" Title="Kuchyně" WF="16384" Ix="32"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0022-2100000000000000" Title="Veranda" WF="16384" Ix="33"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0023-2100000000000000" Title="Koupelna" WF="16384" Ix="34"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0024-2100000000000000" Title="Pracovna" WF="16384" Ix="35"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0025-2100000000000000" Title="Jídelna" WF="16384" Ix="36"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0026-2100000000000000" Title="Konferenční místnost" WF="16384" Ix="37"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0027-2100000000000000" Title="Garáž" WF="16384" Ix="38"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0028-2100000000000000" Title="Zimní zahrada" WF="16384" Ix="39"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0029-2100000000000000" Title="Schodiště" WF="16384" Ix="40"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-002a-2100000000000000" Title="Terasa" WF="16384" Ix="41"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-002b-2100000000000000" Title="Bazén" WF="16384" Ix="42"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-002c-2100000000000000" Title="Chodba" WF="16384" Ix="43"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-002d-2100000000000000" Title="Okolí domu" WF="16384" Ix="44"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-002e-2100000000000000" Title="Technická místnost" WF="16384" Ix="45"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-002f-2100000000000000" Title="Pracovna" WF="16384" Ix="46"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0030-2100000000000000" Title="Technická místnost" WF="16384" Ix="47"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0031-2100000000000000" Title="Centrál" WF="16384" Ix="48"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0032-2100000000000000" Title="Serverovna" WF="16384" Ix="49"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0033-2100000000000000" Title="Kotelna" WF="16384" Ix="50"/>
+				<C Type="IconPlace" V="112" U="00000000-0000-0034-2100000000000000" Title="WC 2" WF="16384" Ix="51"/>
+			</C>
+		</C>
+		<C Type="CategoryCaption" V="112" U="0f4f2104-0319-8202-ffff50dfea156200" Title="Kategorie" WF="16384">
+			<C Type="Category" V="112" U="0f4f2104-032f-8278-ffff50dfea156200" Title="Nepřiřazeno" WF="16384" Icon="00000000-0000-0001-2000000000000000" First="true" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0330-827c-ffff50dfea156200" Title="Osvětlení" WF="16384" Icon="00000000-0000-0002-2000000000000000" Rating="10" CatGroup="2" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0330-8280-ffff50dfea156200" Title="Žaluzie" WF="16384" Icon="00000000-0000-0003-2000000000000000" Rating="10" CatGroup="1" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0330-8284-ffff50dfea156200" Title="Topení" WF="16384" Icon="00000000-0000-0004-2000000000000000" CatGroup="8" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0331-8288-ffff50dfea156200" Title="Podnebí" WF="16384" Icon="00000000-0000-0005-2000000000000000" CatGroup="5" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0331-828c-ffff50dfea156200" Title="Zvuk" WF="16384" Icon="00000000-0000-0006-2000000000000000" CatGroup="4" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0331-8290-ffff50dfea156200" Title="Čidlo" WF="16384" Icon="00000000-0000-0007-2000000000000000" CatGroup="6" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0332-8294-ffff50dfea156200" Title="Hlavice" WF="16384" Icon="00000000-0000-0008-2000000000000000" CatGroup="7" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0332-8298-ffff50dfea156200" Title="Teplota" WF="16384" Icon="00000000-0000-0009-2000000000000000" CatGroup="3" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0332-829c-ffff50dfea156200" Title="Detektor" WF="16384" Icon="00000000-0000-000a-2000000000000000" CatGroup="9" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0333-82a0-ffff50dfea156200" Title="Ventilace" WF="16384" Icon="00000000-0000-000b-2000000000000000" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0333-82a4-ffff50dfea156200" Title="Okno" WF="16384" Icon="00000000-0000-000c-2000000000000000" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0334-82a8-ffff50dfea156200" Title="Monitorování" WF="16384" Icon="00000000-0000-000d-2000000000000000" CatGroup="12" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0334-82ac-ffff50dfea156200" Title="Chlazeni" WF="16384" Icon="00000000-0000-000e-2000000000000000" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0334-82b0-ffff50dfea156200" Title="Alarm" WF="16384" Icon="00000000-0000-000f-2000000000000000" CatGroup="14" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0335-82b4-ffff50dfea156200" Title="Brána" WF="16384" Icon="00000000-0000-0010-2000000000000000" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0335-82b8-ffff50dfea156200" Title="Wellness" WF="16384" Icon="00000000-0000-0011-2000000000000000" CatGroup="16" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-0336-82bc-ffff50dfea156200" Title="Technická místnost" WF="16384" Icon="00000000-0000-0012-2000000000000000" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-033a-82d6-ffff50dfea156200" Title="Serverovna" WF="16384" Icon="00000000-0000-001e-2000000000000000" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-033a-82dc-ffff50dfea156200" Title="Přístup" WF="16384" Icon="00000000-0000-0020-2000000000000000" CatGroup="31" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-033b-82e2-ffff50dfea156200" Title="Spotřebiče" WF="16384" Icon="00000000-0000-0022-2000000000000000" CatGroup="33" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-033b-82e8-ffff50dfea156200" Title="Závlaha" WF="16384" Icon="00000000-0000-0024-2000000000000000" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-033c-82ee-ffff50dfea156200" Title="Fotovoltaika" WF="16384" Icon="00000000-0000-0026-2000000000000000" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-033d-82f6-ffff50dfea156200" Title="Čas" WF="16384" Icon="00000000-0000-0029-2000000000000000" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-033d-82fa-ffff50dfea156200" Title="Elektromobil" WF="16384" Icon="00000000-0000-002a-2000000000000000" CatGroup="41" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-033e-82fe-ffff50dfea156200" Title="Slunce" WF="16384" Icon="00000000-0000-002b-2000000000000000" PType="2"/>
+			<C Type="Category" V="112" U="0f4f2104-033e-8302-ffff50dfea156200" Title="Budík" WF="16384" Icon="00000000-0000-002c-2000000000000000" PType="2"/>
+		</C>
+		<C Type="PlaceCaption" V="112" U="0f4f2104-031a-8204-ffff50dfea156200" Title="Místnosti" WF="16384">
+			<C Type="Place" V="112" U="0f4f2104-0382-8437-ffff50dfea156200" Title="Nepřiřazeno" WF="16384" Icon="00000000-0000-0001-2100000000000000" First="true" PType="2"/>
+			<C Type="Place" V="112" U="0f4f2104-0394-84d9-ffff50dfea156200" Title="Centrál" WF="16384" Icon="00000000-0000-0031-2100000000000000" PGroup="48" PType="2"/>
+		</C>
+		<C Type="UserCaption" V="112" U="0f4f2104-031a-8206-ffff50dfea156200" Title="Uživatel" WF="16384">
+			<C Type="User" V="112" U="0f4f2104-035e-8396-ffff50dfea156200" Title="admin" WF="16384" Pwd="97F052347731FB4D97B80260DB5EF990" LastEdit="0" Main="true" VisuChangePwd="true" AppGroup="0" iBtnArr="" CodeArr="" NFCArr="" NFCNArr=""/>
+		</C>
+		<C Type="UserGroupCaption" V="112" U="0f4f2104-031b-8208-ffff50dfea156200" Title="Skupiny uživatelů" WF="16384">
+			<C Type="UserGroup" V="112" U="0f4f2104-035e-8398-ffff50dfea156200" Title="Administrátoři" WF="16384" Rights="-1" UgType="1" UserModes="3" N="10" Modes="00000000-0000-0001-1500000000000000,00000000-0000-0002-1500000000000000,00000000-0000-0003-1500000000000000,00000000-0000-0004-1500000000000000,00000000-0000-0005-1500000000000000,00000000-0000-0006-1500000000000000,00000000-0000-0007-1500000000000000,00000000-0000-0008-1500000000000000,00000000-0000-0009-1500000000000000,00000000-0000-000a-1500000000000000">
+				<Entry To="1440" V="1"/>
+				<Entry To="1440" Ix="1" V="1"/>
+				<Entry To="1440" Ix="2" V="1"/>
+				<Entry To="1440" Ix="3" V="1"/>
+				<Entry To="1440" Ix="4" V="1"/>
+				<Entry To="1440" Ix="5" V="1"/>
+				<Entry To="1440" Ix="6" V="1"/>
+				<Entry To="1440" Ix="7" V="1"/>
+				<Entry To="1440" Ix="8" V="1"/>
+				<Entry To="1440" Ix="9" V="1"/>
+				<C Type="RefUser" V="112" U="0f4f2104-035f-839a-ffff50dfea156200" Title="admin" Cl="0,0,0" Ref="0f4f2104-035e-8396-ffff50dfea156200" WF="16384"/>
+			</C>
+			<C Type="UserGroup" V="112" U="0f4f2104-035f-839c-ffff50dfea156200" Title="Uživatel" WF="16384" Rights="1" UserModes="3" N="10" Modes="00000000-0000-0001-1500000000000000,00000000-0000-0002-1500000000000000,00000000-0000-0003-1500000000000000,00000000-0000-0004-1500000000000000,00000000-0000-0005-1500000000000000,00000000-0000-0006-1500000000000000,00000000-0000-0007-1500000000000000,00000000-0000-0008-1500000000000000,00000000-0000-0009-1500000000000000,00000000-0000-000a-1500000000000000">
+				<Entry To="1440" V="1"/>
+				<Entry To="1440" Ix="1" V="1"/>
+				<Entry To="1440" Ix="2" V="1"/>
+				<Entry To="1440" Ix="3" V="1"/>
+				<Entry To="1440" Ix="4" V="1"/>
+				<Entry To="1440" Ix="5" V="1"/>
+				<Entry To="1440" Ix="6" V="1"/>
+				<Entry To="1440" Ix="7" V="1"/>
+				<Entry To="1440" Ix="8" V="1"/>
+				<Entry To="1440" Ix="9" V="1"/>
+			</C>
+			<C Type="UserGroup" V="112" U="0f4f2104-035f-839e-ffff50dfea156200" Title="Všichni" WF="16384" Rights="1" UgType="2" UserModes="3" N="10" Modes="00000000-0000-0001-1500000000000000,00000000-0000-0002-1500000000000000,00000000-0000-0003-1500000000000000,00000000-0000-0004-1500000000000000,00000000-0000-0005-1500000000000000,00000000-0000-0006-1500000000000000,00000000-0000-0007-1500000000000000,00000000-0000-0008-1500000000000000,00000000-0000-0009-1500000000000000,00000000-0000-000a-1500000000000000">
+				<Entry To="1440" V="1"/>
+				<Entry To="1440" Ix="1" V="1"/>
+				<Entry To="1440" Ix="2" V="1"/>
+				<Entry To="1440" Ix="3" V="1"/>
+				<Entry To="1440" Ix="4" V="1"/>
+				<Entry To="1440" Ix="5" V="1"/>
+				<Entry To="1440" Ix="6" V="1"/>
+				<Entry To="1440" Ix="7" V="1"/>
+				<Entry To="1440" Ix="8" V="1"/>
+				<Entry To="1440" Ix="9" V="1"/>
+				<C Type="RefUser" V="112" U="0f4f2104-035f-83a0-ffff50dfea156200" Title="admin" Cl="0,0,0" Ref="0f4f2104-035e-8396-ffff50dfea156200" WF="16384"/>
+			</C>
+			<C Type="UserGroup" V="112" U="0f4f2104-035f-83a2-ffff50dfea156200" Title="Nikdo" WF="16384" UgType="3" UserModes="3" N="10" Modes="00000000-0000-0001-1500000000000000,00000000-0000-0002-1500000000000000,00000000-0000-0003-1500000000000000,00000000-0000-0004-1500000000000000,00000000-0000-0005-1500000000000000,00000000-0000-0006-1500000000000000,00000000-0000-0007-1500000000000000,00000000-0000-0008-1500000000000000,00000000-0000-0009-1500000000000000,00000000-0000-000a-1500000000000000">
+				<Entry To="1440" V="1"/>
+				<Entry To="1440" Ix="1" V="1"/>
+				<Entry To="1440" Ix="2" V="1"/>
+				<Entry To="1440" Ix="3" V="1"/>
+				<Entry To="1440" Ix="4" V="1"/>
+				<Entry To="1440" Ix="5" V="1"/>
+				<Entry To="1440" Ix="6" V="1"/>
+				<Entry To="1440" Ix="7" V="1"/>
+				<Entry To="1440" Ix="8" V="1"/>
+				<Entry To="1440" Ix="9" V="1"/>
+			</C>
+		</C>
+		<C Type="ConstantCaption" V="112" U="0f4f2104-031b-820a-ffff50dfea156200" Title="Konstanty" WF="16384"/>
+		<C Type="MemoryCaption" V="112" U="0f4f2104-031c-820c-ffff50dfea156200" Title="Značky" WF="16384"/>
+		<C Type="ModeCaption" V="112" U="0f4f2104-031c-820e-ffff50dfea156200" Title="Uživatelské režimy" WF="16384">
+			<C Type="Mode" V="112" U="00000000-0000-0001-1500000000000000" Title="Svátek" Nio="2" WF="16384">
+				<Co K="I" U="0f4f2104-0355-8346-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-0355-8347-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="00000000-0000-0002-1500000000000000" Title="Dovolená" Nio="2" WF="16384" Mode="1">
+				<Co K="I" U="0f4f2104-0355-834a-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-0355-834b-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="00000000-0000-0003-1500000000000000" Title="Volný den/školní prázdniny" Nio="2" WF="16384" Mode="2">
+				<Co K="I" U="0f4f2104-0356-834e-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-0356-834f-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="00000000-0000-0004-1500000000000000" Title="Pondělí" Nio="2" WF="16384" Mode="3">
+				<Co K="I" U="0f4f2104-0356-8352-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-0356-8353-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="00000000-0000-0005-1500000000000000" Title="Úterý" Nio="2" WF="16384" Mode="4">
+				<Co K="I" U="0f4f2104-0357-8356-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-0357-8357-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="00000000-0000-0006-1500000000000000" Title="Středa" Nio="2" WF="16384" Mode="5">
+				<Co K="I" U="0f4f2104-0357-835a-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-0357-835b-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="00000000-0000-0007-1500000000000000" Title="Čtvrtek" Nio="2" WF="16384" Mode="6">
+				<Co K="I" U="0f4f2104-0358-835e-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-0358-835f-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="00000000-0000-0008-1500000000000000" Title="Pátek" Nio="2" WF="16384" Mode="7">
+				<Co K="I" U="0f4f2104-0358-8362-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-0358-8363-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="00000000-0000-0009-1500000000000000" Title="Sobota" Nio="2" WF="16384" Mode="8">
+				<Co K="I" U="0f4f2104-0359-8366-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-0359-8367-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="00000000-0000-000a-1500000000000000" Title="Neděle" Nio="2" WF="16384" Mode="9">
+				<Co K="I" U="0f4f2104-0359-836a-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-0359-836b-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="00000000-0000-000b-1500000000000000" Title="Perioda topení" Nio="2" WF="16384" Mode="10">
+				<Co K="I" U="0f4f2104-035a-836e-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-035a-836f-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="00000000-0000-000c-1500000000000000" Title="Perioda chlazení" Nio="2" WF="16384" Mode="11">
+				<Co K="I" U="0f4f2104-035a-8372-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-035a-8373-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="0f4f2104-035b-8378-ffff50dfea156200" Title="Alarm" Nio="2" WF="16384" Mode="-1">
+				<Co K="I" U="0f4f2104-035b-8376-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-035b-8377-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="0f4f2104-035b-837c-ffff50dfea156200" Title="Simulace přítomnosti" Nio="2" WF="16384" Mode="-2">
+				<Co K="I" U="0f4f2104-035b-837a-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-035b-837b-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="0f4f2104-035c-8380-ffff50dfea156200" Title="Zámraza" Nio="2" WF="16384" Mode="-3">
+				<Co K="I" U="0f4f2104-035c-837e-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-035c-837f-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="0f4f2104-035c-8384-ffff50dfea156200" Title="Zvýšená spotřeba tepla" Nio="2" WF="16384" Mode="-4">
+				<Co K="I" U="0f4f2104-035c-8382-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-035c-8383-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="0f4f2104-035d-8388-ffff50dfea156200" Title="Oslava" Nio="2" WF="16384" Mode="-5">
+				<Co K="I" U="0f4f2104-035d-8386-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-035d-8387-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+			<C Type="Mode" V="112" U="0f4f2104-035d-838c-ffff50dfea156200" Title="Nikdo není přítomen" Nio="2" WF="16384" Mode="-6">
+				<Co K="I" U="0f4f2104-035d-838a-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-035d-838b-ffff50dfea156200"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<Display StateOnly="true"/>
+			</C>
+		</C>
+		<C Type="CalendarCaption" V="112" U="0f4f2104-031d-8210-ffff50dfea156200" Title="Kalendář" WF="16384">
+			<C Type="CalendarEntry" V="112" U="0f4f2104-035e-8390-ffff50dfea156200" Title="Perioda topení" Nio="2" WF="16384" CalType="10" Mode="4" Month="10" Day="1" Month2="4" Day2="30" WeekDayInMonth="1">
+				<Co K="I" U="0f4f2104-035e-838e-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-035e-838f-ffff50dfea156200"/>
+			</C>
+			<C Type="CalendarEntry" V="112" U="0f4f2104-035e-8394-ffff50dfea156200" Title="Perioda chlazení" Nio="2" WF="16384" CalType="11" Mode="4" Month="5" Day="1" Month2="9" Day2="30" WeekDayInMonth="1">
+				<Co K="I" U="0f4f2104-035e-8392-ffff50dfea156200"/>
+				<Co K="Q" U="0f4f2104-035e-8393-ffff50dfea156200"/>
+			</C>
+		</C>
+		<C Type="RemoteControls" V="112" U="0f4f2104-031d-8212-ffff50dfea156200" Title="Dálková ovládání" WF="16384"/>
+		<C Type="TimeCaption" V="112" U="0f4f2104-031d-8214-ffff50dfea156200" Title="Časy" Cl="0,0,0" WF="16384">
+			<C Type="Day2009" V="112" U="0f4f2104-031e-8217-ffff50dfea156200" Title="Dny od roku 2009" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-031e-8216-ffff50dfea156200"/>
+			</C>
+			<C Type="Year" V="112" U="0f4f2104-031f-821a-ffff50dfea156200" Title="Rok" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-031f-8219-ffff50dfea156200"/>
+			</C>
+			<C Type="Month" V="112" U="0f4f2104-031f-821d-ffff50dfea156200" Title="Měsíc" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-031f-821c-ffff50dfea156200"/>
+			</C>
+			<C Type="Day" V="112" U="0f4f2104-031f-8220-ffff50dfea156200" Title="Den" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-031f-821f-ffff50dfea156200"/>
+			</C>
+			<C Type="DayOfWeek" V="112" U="0f4f2104-0320-8223-ffff50dfea156200" Title="Den v týdnu" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0320-8222-ffff50dfea156200"/>
+			</C>
+			<C Type="Calendar" V="112" U="0f4f2104-0320-8226-ffff50dfea156200" Title="Typ kalendáře" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0320-8225-ffff50dfea156200"/>
+			</C>
+			<C Type="Time" V="112" U="0f4f2104-0321-8229-ffff50dfea156200" Title="Minuty od půlnoci" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0321-8228-ffff50dfea156200"/>
+			</C>
+			<C Type="Hour" V="112" U="0f4f2104-0321-822c-ffff50dfea156200" Title="Hodina" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0321-822b-ffff50dfea156200"/>
+			</C>
+			<C Type="Minute" V="112" U="0f4f2104-0322-822f-ffff50dfea156200" Title="Minuty" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0322-822e-ffff50dfea156200"/>
+			</C>
+			<C Type="Second" V="112" U="0f4f2104-0323-8232-ffff50dfea156200" Title="Sekundy" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0323-8231-ffff50dfea156200"/>
+			</C>
+			<C Type="SecondsBoot" V="112" U="0f4f2104-0323-8235-ffff50dfea156200" Title="Sekundy od startu" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0323-8234-ffff50dfea156200"/>
+			</C>
+			<C Type="Sunrise" V="112" U="0f4f2104-0323-8238-ffff50dfea156200" Title="Minuty do východu slunce" Nio="1" WF="16384">
+				<Co K="Q" U="0f4f2104-0323-8237-ffff50dfea156200"/>
+			</C>
+			<C Type="Sunset" V="112" U="0f4f2104-0324-823b-ffff50dfea156200" Title="Minuty do západu slunce" Nio="1" WF="16384">
+				<Co K="Q" U="0f4f2104-0324-823a-ffff50dfea156200"/>
+			</C>
+			<C Type="Daylight" V="112" U="0f4f2104-0325-823e-ffff50dfea156200" Title="Denní světlo" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0325-823d-ffff50dfea156200"/>
+			</C>
+			<C Type="Daylight2" V="112" U="0f4f2104-0326-8241-ffff50dfea156200" Title="Denní světlo 30 minut" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0326-8240-ffff50dfea156200"/>
+			</C>
+			<C Type="Morningtwilight" V="112" U="0f4f2104-0326-8244-ffff50dfea156200" Title="Minuty do úsvitu" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0326-8243-ffff50dfea156200"/>
+			</C>
+			<C Type="Eveningtwilight" V="112" U="0f4f2104-0327-8247-ffff50dfea156200" Title="Minuty do setmění" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0327-8246-ffff50dfea156200"/>
+			</C>
+			<C Type="SunAltitude" V="112" U="0f4f2104-0327-824a-ffff50dfea156200" Title="Výška slunce" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0327-8249-ffff50dfea156200"/>
+			</C>
+			<C Type="SunAzimuth" V="112" U="0f4f2104-0327-824d-ffff50dfea156200" Title="Směr slunce" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0327-824c-ffff50dfea156200"/>
+			</C>
+			<C Type="StartPulse" V="112" U="0f4f2104-0328-8250-ffff50dfea156200" Title="Počáteční impulz" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0328-824f-ffff50dfea156200"/>
+			</C>
+			<C Type="ImpulseYear" V="112" U="0f4f2104-0328-8253-ffff50dfea156200" Title="Roční impulz" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0328-8252-ffff50dfea156200"/>
+			</C>
+			<C Type="ImpulseMonth" V="112" U="0f4f2104-0329-8256-ffff50dfea156200" Title="Měsíční impulz" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0329-8255-ffff50dfea156200"/>
+			</C>
+			<C Type="ImpulseDay" V="112" U="0f4f2104-0329-8259-ffff50dfea156200" Title="Denní impulz" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-0329-8258-ffff50dfea156200"/>
+			</C>
+			<C Type="ImpulseHour" V="112" U="0f4f2104-032a-825c-ffff50dfea156200" Title="Hodinový impulz" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-032a-825b-ffff50dfea156200"/>
+			</C>
+			<C Type="ImpulseMinute" V="112" U="0f4f2104-032a-825f-ffff50dfea156200" Title="Minutový impulz" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-032a-825e-ffff50dfea156200"/>
+			</C>
+			<C Type="ImpulseSecond" V="112" U="0f4f2104-032b-8262-ffff50dfea156200" Title="Sekundový impulz" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-032b-8261-ffff50dfea156200"/>
+			</C>
+			<C Type="ImpulseSunrise" V="112" U="0f4f2104-032c-8265-ffff50dfea156200" Title="Impulz východu slunce" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-032c-8264-ffff50dfea156200"/>
+			</C>
+			<C Type="ImpulseSunset" V="112" U="0f4f2104-032d-8268-ffff50dfea156200" Title="Impulz západu slunce" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-032d-8267-ffff50dfea156200"/>
+			</C>
+			<C Type="ImpulseMorningtwilight" V="112" U="0f4f2104-032d-826b-ffff50dfea156200" Title="Impulz rozednění" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-032d-826a-ffff50dfea156200"/>
+			</C>
+			<C Type="ImpulseEveningtwilight" V="112" U="0f4f2104-032e-826e-ffff50dfea156200" Title="Impulz setmění" Nio="1" WF="16385">
+				<Co K="Q" U="0f4f2104-032e-826d-ffff50dfea156200"/>
+			</C>
+		</C>
+		<C Type="WeatherServer" V="112" U="0f4f2104-037a-8416-ffff50dfea156200" Title="Server počasí " Cl="0,0,0" WF="16384" SType="0" Address="http://weather.loxone.com:6066" VisuUUID="0f4f0000-037a-8414-ffff4fc7e7df1b6d" SpStates="0f4f2104-037a-8415-ffff4fc7e7df1b6d">
+			<IoData Visu="true" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+			<C Type="WeatherData" IName="WDC34" V="112" U="0f4f2104-037a-8419-ffff50dfea156200" Title="Sluneční svit" Nio="1" WF="16384" WType="34" SL="220">
+				<Co K="AQ" U="0f4f2104-037a-8418-ffff4fc7e7df1b6d"/>
+				<Display StateOnly="true"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+			</C>
+			<C Type="WeatherData" IName="WDC1" V="112" U="0f4f2104-037a-841c-ffff50dfea156200" Title="Teplota" Nio="1" WF="16384" WType="1" SL="220">
+				<Co K="AQ" U="0f4f2104-037a-841b-ffff4fc7e7df1b6d"/>
+				<Display Unit="&lt;v.1&gt;°" StateOnly="true"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+			</C>
+			<C Type="WeatherData" IName="WDC3" V="112" U="0f4f2104-037a-841f-ffff50dfea156200" Title="Rel. vlhkost vzduchu" Nio="1" WF="16384" WType="3" SL="220">
+				<Co K="AQ" U="0f4f2104-037a-841e-ffff4fc7e7df1b6d"/>
+				<Display Unit="&lt;v&gt;%" StateOnly="true"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+			</C>
+			<C Type="WeatherData" IName="WDC4" V="112" U="0f4f2104-037a-8422-ffff50dfea156200" Title="Rychlost větru" Nio="1" WF="16384" WType="4" SL="220">
+				<Co K="AQ" U="0f4f2104-037a-8421-ffff4fc7e7df1b6d"/>
+				<Display Unit="&lt;v&gt;km/h" StateOnly="true"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+			</C>
+			<C Type="WeatherData" IName="WDC5" V="112" U="0f4f2104-037a-8425-ffff50dfea156200" Title="Směr větru" Nio="1" WF="16384" WType="5" SL="220">
+				<Co K="AQ" U="0f4f2104-037a-8424-ffff4fc7e7df1b6d"/>
+				<Display Unit="&lt;v.1&gt;°" StateOnly="true"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+			</C>
+			<C Type="WeatherData" IName="WDC7" V="112" U="0f4f2104-037b-8428-ffff50dfea156200" Title="Abs. záření" Nio="1" WF="16384" WType="7" SL="220">
+				<Co K="AQ" U="0f4f2104-037b-8427-ffff4fc7e7df1b6d"/>
+				<Display Unit="&lt;v&gt;W/m²" StateOnly="true"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+			</C>
+			<C Type="WeatherData" IName="WDC9" V="112" U="0f4f2104-037b-842b-ffff50dfea156200" Title="Srážky" Nio="1" WF="16384" WType="9" SL="220">
+				<Co K="AQ" U="0f4f2104-037b-842a-ffff4fc7e7df1b6d"/>
+				<Display Unit="&lt;v.1&gt;l/m²/h" StateOnly="true"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+			</C>
+			<C Type="WeatherData" IName="WDC11" V="112" U="0f4f2104-037b-842e-ffff50dfea156200" Title="Atmosferický tlak" Nio="1" WF="16384" WType="11" SL="220">
+				<Co K="AQ" U="0f4f2104-037b-842d-ffff4fc7e7df1b6d"/>
+				<Display Unit="&lt;v&gt;hPa" StateOnly="true"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+			</C>
+			<C Type="WeatherData" IName="WDC26" V="112" U="0f4f2104-037b-8431-ffff50dfea156200" Title="Vnímaná teplota" Nio="1" WF="16384" WType="26" SL="220">
+				<Co K="AQ" U="0f4f2104-037b-8430-ffff4fc7e7df1b6d"/>
+				<Display Unit="&lt;v.1&gt;°" StateOnly="true"/>
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+			</C>
+		</C>
+		<C Type="LoxCaption" V="112" U="0f4f2104-035f-83a4-ffff50dfea156200" Title="Síťová zařízení" Cl="0,0,0" WF="16384" CaptionType="6"/>
+		<C Type="AutoPilot" V="112" U="0f4f2104-032e-8274-ffff50dfea156200" Title="Autopiloti" Cl="0,0,0" Nio="2" WF="20480" SpStates="0f4f2104-032e-8270-ffff50dfea156200,0f4f2104-032e-8271-ffff50dfea156200" config="">
+			<Co K="Input" U="0f4f2104-032e-8272-ffff50dfea156200"/>
+			<Co K="output" U="0f4f2104-032e-8273-ffff50dfea156200"/>
+		</C>
+		<C Type="LoxLIVE" V="112" U="0f4f2104-035f-83a6-ffff50dfea156200" Title="Railduino UDP 485" WF="16384" CycleUserProt="-1" Serial="504F94000000" Installation="" SwitchBoard="Rozvaděč" SwitchBoardRow="1" SwitchBoardPos="1" ExtAddr="dns.loxonecloud.com" IntAddr="" UseUpnpAuto="false" Pause="10" RxTimeout="1000" BaseID="-1">
+			<IoData></IoData>
+			<C Type="InputCaption" V="112" U="0f4f2104-0360-83a8-ffff50dfea156200" Title="Digitální vstupy" WF="16384">
+				<C Type="DigitalIn" IName="I1" V="112" U="0f4f2104-0366-83c9-ffff50dfea156200" Title="Vstup 1" Nio="1" WF="16385" MinTime="10">
+					<Co K="Q" U="0f4f2104-0366-83c8-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v&gt;" StateOnly="true"/>
+				</C>
+				<C Type="DigitalIn" IName="I2" V="112" U="0f4f2104-0367-83cc-ffff50dfea156200" Title="Vstup 2" Nio="1" WF="16385" MinTime="10">
+					<Co K="Q" U="0f4f2104-0367-83cb-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v&gt;" StateOnly="true"/>
+				</C>
+				<C Type="DigitalIn" IName="I3" V="112" U="0f4f2104-0368-83cf-ffff50dfea156200" Title="Vstup 3" Nio="1" WF="16385" MinTime="10">
+					<Co K="Q" U="0f4f2104-0368-83ce-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v&gt;" StateOnly="true"/>
+				</C>
+				<C Type="DigitalIn" IName="I4" V="112" U="0f4f2104-0368-83d2-ffff50dfea156200" Title="Vstup 4" Nio="1" WF="16385" MinTime="10">
+					<Co K="Q" U="0f4f2104-0368-83d1-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v&gt;" StateOnly="true"/>
+				</C>
+				<C Type="DigitalIn" IName="I5" V="112" U="0f4f2104-0369-83d5-ffff50dfea156200" Title="Vstup 5" Nio="1" WF="16385" MinTime="10">
+					<Co K="Q" U="0f4f2104-0369-83d4-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v&gt;" StateOnly="true"/>
+				</C>
+				<C Type="DigitalIn" IName="I6" V="112" U="0f4f2104-036a-83d8-ffff50dfea156200" Title="Vstup 6" Nio="1" WF="16385" MinTime="10">
+					<Co K="Q" U="0f4f2104-036a-83d7-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v&gt;" StateOnly="true"/>
+				</C>
+				<C Type="DigitalIn" IName="I7" V="112" U="0f4f2104-036a-83db-ffff50dfea156200" Title="Vstup 7" Nio="1" WF="16385" MinTime="10">
+					<Co K="Q" U="0f4f2104-036a-83da-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v&gt;" StateOnly="true"/>
+				</C>
+				<C Type="DigitalIn" IName="I8" V="112" U="0f4f2104-036a-83de-ffff50dfea156200" Title="Vstup 8" Nio="1" WF="16385" MinTime="10">
+					<Co K="Q" U="0f4f2104-036a-83dd-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v&gt;" StateOnly="true"/>
+				</C>
+			</C>
+			<C Type="AnalogInputCaption" V="112" U="0f4f2104-0360-83aa-ffff50dfea156200" Title="Analogové vstupy" WF="16384">
+				<C Type="VoltageIn" IName="AI1" V="112" U="0f4f2104-036b-83e2-ffff50dfea156200" Title="Napětí 1" Nio="2" WF="16385" Analog="true" SourceValHigh="10" DestValHigh="10" MaxVal="10" MinChange="0.25" MinTime="1000" AverageTime="1">
+					<Co K="AQ" U="0f4f2104-036b-83e0-ffff4fc7e7df1b6d"/>
+					<Co K="Q" U="0f4f2104-036b-83e1-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="VoltageIn" IName="AI2" V="112" U="0f4f2104-036b-83e6-ffff50dfea156200" Title="Napětí 2" Nio="2" WF="16385" Analog="true" SourceValHigh="10" DestValHigh="10" MaxVal="10" MinChange="0.25" MinTime="1000" AverageTime="1">
+					<Co K="AQ" U="0f4f2104-036b-83e4-ffff4fc7e7df1b6d"/>
+					<Co K="Q" U="0f4f2104-036b-83e5-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="VoltageIn" IName="AI3" V="112" U="0f4f2104-036c-83ea-ffff50dfea156200" Title="Napětí 3" Nio="2" WF="16385" Analog="true" SourceValHigh="10" DestValHigh="10" MaxVal="10" MinChange="0.25" MinTime="1000" AverageTime="1">
+					<Co K="AQ" U="0f4f2104-036c-83e8-ffff4fc7e7df1b6d"/>
+					<Co K="Q" U="0f4f2104-036c-83e9-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="VoltageIn" IName="AI4" V="112" U="0f4f2104-036c-83ee-ffff50dfea156200" Title="Napětí 4" Nio="2" WF="16385" Analog="true" SourceValHigh="10" DestValHigh="10" MaxVal="10" MinChange="0.25" MinTime="1000" AverageTime="1">
+					<Co K="AQ" U="0f4f2104-036c-83ec-ffff4fc7e7df1b6d"/>
+					<Co K="Q" U="0f4f2104-036c-83ed-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+			</C>
+			<C Type="OutputCaption" V="112" U="0f4f2104-0361-83ac-ffff50dfea156200" Title="Digitální výstupy" WF="16384">
+				<C Type="Actor" IName="Q1" V="112" U="0f4f2104-036d-83f1-ffff50dfea156200" Title="Aktor (relé) 1" Nio="1" WF="16385">
+					<Co K="I" U="0f4f2104-036d-83f0-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="Actor" IName="Q2" V="112" U="0f4f2104-036d-83f4-ffff50dfea156200" Title="Aktor (relé) 2" Nio="1" WF="16385">
+					<Co K="I" U="0f4f2104-036d-83f3-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="Actor" IName="Q3" V="112" U="0f4f2104-036e-83f7-ffff50dfea156200" Title="Aktor (relé) 3" Nio="1" WF="16385">
+					<Co K="I" U="0f4f2104-036e-83f6-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="Actor" IName="Q4" V="112" U="0f4f2104-036e-83fa-ffff50dfea156200" Title="Aktor (relé) 4" Nio="1" WF="16385">
+					<Co K="I" U="0f4f2104-036e-83f9-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="Actor" IName="Q5" V="112" U="0f4f2104-036f-83fd-ffff50dfea156200" Title="Aktor (relé) 5" Nio="1" WF="16385">
+					<Co K="I" U="0f4f2104-036f-83fc-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="Actor" IName="Q6" V="112" U="0f4f2104-036f-8400-ffff50dfea156200" Title="Aktor (relé) 6" Nio="1" WF="16385">
+					<Co K="I" U="0f4f2104-036f-83ff-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="Actor" IName="Q7" V="112" U="0f4f2104-0370-8403-ffff50dfea156200" Title="Aktor (relé) 7" Nio="1" WF="16385">
+					<Co K="I" U="0f4f2104-0370-8402-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="Actor" IName="Q8" V="112" U="0f4f2104-0370-8406-ffff50dfea156200" Title="Aktor (relé) 8" Nio="1" WF="16385">
+					<Co K="I" U="0f4f2104-0370-8405-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+			</C>
+			<C Type="AnalogOutputCaption" V="112" U="0f4f2104-0361-83ae-ffff50dfea156200" Title="Analogové výstupy" WF="16384">
+				<C Type="VoltageOut" IName="AQ1" V="112" U="0f4f2104-0371-8409-ffff50dfea156200" Title="Napětí 1" Nio="1" WF="16385" Channel="1" SourceValHigh="10" DestValHigh="10">
+					<Co K="I" U="0f4f2104-0371-8408-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="VoltageOut" IName="AQ2" V="112" U="0f4f2104-0371-840c-ffff50dfea156200" Title="Napětí 2" Nio="1" WF="16385" Channel="1" SourceValHigh="10" DestValHigh="10">
+					<Co K="I" U="0f4f2104-0371-840b-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="VoltageOut" IName="AQ3" V="112" U="0f4f2104-0371-840f-ffff50dfea156200" Title="Napětí 3" Nio="1" WF="16385" Channel="1" SourceValHigh="10" DestValHigh="10">
+					<Co K="I" U="0f4f2104-0371-840e-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+				<C Type="VoltageOut" IName="AQ4" V="112" U="0f4f2104-0372-8412-ffff50dfea156200" Title="Napětí 4" Nio="1" WF="16385" Channel="1" SourceValHigh="10" DestValHigh="10">
+					<Co K="I" U="0f4f2104-0372-8411-ffff4fc7e7df1b6d"/>
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+				</C>
+			</C>
+			<C Type="WeatherCaption" V="112" U="0f4f2104-0364-83be-ffff50dfea156200" Title="Komunikace Miniserveru" WF="16384"/>
+			<C Type="EIBline" V="112" U="0f4f2104-0362-83b0-ffff50dfea156200" Title="KNX/EIB sběrnice" WF="16384" EibAddr="1.1.250 14/">
+				<C Type="EIBsensorCaption" V="112" U="0f4f2104-0362-83b2-ffff50dfea156200" Title="Senzory" WF="16384"/>
+				<C Type="EIBactorCaption" V="112" U="0f4f2104-0363-83b4-ffff50dfea156200" Title="Aktory" WF="16384"/>
+			</C>
+			<C Type="VirtualInCaption" V="112" U="0f4f2104-0363-83b6-ffff50dfea156200" Title="Virtuální vstupy" WF="16384">
+				<C Type="VirtualUdpIn" IName="VUI1" V="112" U="0f5039e7-02fe-2747-ffff50dfea156200" Title="UDP Railduino states" WF="16384" Address="" Port="55555">
+					<C Type="VirtualUdpInCmd" IName="VCI1" V="112" U="0f503a25-0157-2b1d-ffff50dfea156200" Title="R1 DI1" Nio="2" WF="16400" Check="rail1 di1 \v" EnVal="true" SourceValHigh="1" DestValHigh="1" MaxVal="1" MinChange="0.25" MinTime="1000">
+						<Co K="AQ" U="0f503a25-0157-2b1b-ffff4e742497e676"/>
+						<Co K="Q" U="0f503a25-0157-2b1c-ffff4e742497e676"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+					<C Type="VirtualUdpInCmd" IName="VCI2" V="112" U="0f503ae2-0216-532e-ffff50dfea156200" Title="R1 AI1" Nio="2" WF="16400" Check="rail1 ai1 \v" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000" MinChange="0.25" MinTime="1000">
+						<Co K="AQ" U="0f503ae2-0216-532c-ffff0b27883bcd87"/>
+						<Co K="Q" U="0f503ae2-0216-532d-ffff0b27883bcd87"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+					<C Type="VirtualUdpInCmd" IName="VCI3" V="112" U="0f503b1a-0180-60ef-ffff50dfea156200" Title="R1 DS2438 Temp" Nio="2" WF="16400" Check="rail1 1w 26ab1ce200c2 \v" Signed="true" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000" MinChange="0.25" MinTime="1000">
+						<Co K="AQ" U="0f503b1a-0180-60ed-ffff34dbcf69ab60"/>
+						<Co K="Q" U="0f503b1a-0180-60ee-ffff34dbcf69ab60"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+					<C Type="VirtualUdpInCmd" IName="VCI4" V="112" U="0f503b1c-00f1-62ef-ffff50dfea156200" Title="R1 DS2438 Vad" Nio="2" WF="16400" Check="rail1 1w 26ab1ce200c2 \# \v" Signed="true" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000" MinChange="0.25" MinTime="1000">
+						<Co K="AQ" U="0f503b1c-00f1-62ed-ffffeebf2e6d8086"/>
+						<Co K="Q" U="0f503b1c-00f1-62ee-ffffeebf2e6d8086"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+					<C Type="VirtualUdpInCmd" IName="VCI5" V="112" U="0f503b1c-02d2-64f2-ffff50dfea156200" Title="R1 DS2438 Vsens" Nio="2" WF="16400" Check="rail1 1w 26ab1ce200c2 \# \# \v" Signed="true" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000" MinChange="0.25" MinTime="1000">
+						<Co K="AQ" U="0f503b1c-02d2-64f0-ffff1bf4a1217e7f"/>
+						<Co K="Q" U="0f503b1c-02d2-64f1-ffff1bf4a1217e7f"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+					<C Type="VirtualUdpInCmd" IName="VCI6" V="112" U="0f503bd6-02c2-85d0-ffff50dfea156200" Title="R1 DS18B20 Temp" Nio="2" WF="16400" Check="rail1 1w 28e85bfb30072 \v" Signed="true" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000" MinChange="0.25" MinTime="1000">
+						<Co K="AQ" U="0f503bd6-02c2-85ce-ffff8f2efa8e1917"/>
+						<Co K="Q" U="0f503bd6-02c2-85cf-ffff8f2efa8e1917"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+				</C>
+			</C>
+			<C Type="VirtualOutCaption" V="112" U="0f4f2104-0364-83b8-ffff50dfea156200" Title="Virtuální výstupy" WF="16384">
+				<C Type="VirtualOut" IName="VQ1" V="112" U="0f503c2f-0200-9260-ffff50dfea156200" Title="UDP Railduino commands" WF="16384" CloseAfterSend="true" CmdSep=";">
+					<IoData Pr="0f4f2104-0382-8437-ffff50dfea156200"/>
+					<C Type="VirtualOutCmd" IName="VQC1" V="112" U="0f503c5a-0141-9ce5-ffff50dfea156200" Title="R1 DO1" Nio="1" WF="16400" CmdOn="rail1 do1 on" CmdOff="rail1 do1 off" SourceValHigh="10" DestValHigh="10" Tx="false">
+						<Co K="I" Nc="1" U="0f503c5a-0141-9ce4-ffff25ac9411f080">
+							<In Input="0f503c88-0242-a994-ffff5236e10a84e5"/>
+						</Co>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+					<C Type="VirtualOutCmd" IName="VQC2" V="112" U="0f503c98-0290-abb7-ffff50dfea156200" Title="R1 PWM1" Nio="1" WF="16400" Analog="true" CmdOn="rail1 pwm1 &lt;v&gt;" SourceValHigh="100" DestValHigh="255" Tx="false">
+						<Co K="I" Nc="1" U="0f503c98-0290-abb6-ffff6a8495f023f0">
+							<In Input="0f503ce0-0080-b884-ffff5152e809e9b0"/>
+						</Co>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+				</C>
+			</C>
+			<C Type="TaskCaption" V="112" U="0f4f2104-0364-83bc-ffff50dfea156200" Title="Uložené úkoly" Cl="0,0,0" WF="16384" gT="0f4f2104-0364-83bb-ffff4fc7e7df1b6d" pT="0f4f2104-0364-83ba-ffff4fc7e7df1b6d"/>
+			<C Type="LoxCaption" V="112" U="0f4f2104-0366-83c6-ffff50dfea156200" Title="SD-karta" Cl="0,0,0" WF="16384" CaptionType="4"/>
+			<C Type="LoggerOutCaption" V="112" U="0f4f2104-0365-83c0-ffff50dfea156200" Title="Zprávy" WF="16384">
+				<C Type="Logger" V="112" U="0f4f2104-0365-83c2-ffff50dfea156200" Title="Standardní logger" WF="16384" Address="/log/user.log"/>
+				<C Type="Notification" V="112" U="0f4f2104-0366-83c4-ffff50dfea156200" Title="Systémové notifikace" WF="16384" Entries="10" Sys="true">
+					<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				</C>
+			</C>
+			<C Type="Comm485" V="112" U="0f4f218a-01f7-8c55-ffff50dfea156200" Title="RS485 Extension" WF="16384" Serial="07000000" Installation="" SwitchBoard="Rozvaděč" SwitchBoardRow="1" SwitchBoardPos="1" ExtensionBlinkNum="5" IntAddr="" Baudrate="115200" Databits="8" Pause="10" RxTimeout="1000" BaseID="-1">
+				<IoData></IoData>
+				<C Type="Online" IName="S0" V="112" U="0f4f218a-0225-8c58-ffff50dfea156200" Title="Online status RS485 Extension" Cl="0,0,0" Nio="1" WF="20481" MinTime="10" NoMsg="true">
+					<Co K="Q" U="0f4f218a-0225-8c57-ffff0ec9729e9378"/>
+					<IoData Cr="0f4f2104-0334-82a8-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+					<Display Unit="&lt;v&gt;" StateOnly="true" IxText="8"/>
+				</C>
+				<C Type="SensorCaption" V="112" U="0f4f218a-0225-8c5a-ffff50dfea156200" Title="Senzory" WF="16384">
+					<C Type="Lox485sensor" V="112" U="0f4f21aa-0327-8df5-ffff50dfea156200" Title="R1 DI1" Cl="0,0,0" Nio="2" WF="16400" Check="rail1 di1 \v" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000">
+						<Co K="AQ" U="0f4f21aa-0327-8df3-ffff0b6a1c0ae553"/>
+						<Co K="Q" U="0f4f21aa-0327-8df4-ffff0b6a1c0ae553"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Unit="&lt;v&gt;" StateOnly="true"/>
+					</C>
+					<C Type="Lox485sensor" V="112" U="0f4f25ec-03d7-0393-ffff50dfea156200" Title="R1 DS2438 Temp" Cl="0,0,0" Nio="2" WF="16400" Check="rail1 1w 2612c3102004f \v" Signed="true" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000">
+						<Co K="AQ" U="0f4f25ec-03d7-0391-ffff76122898e223"/>
+						<Co K="Q" U="0f4f25ec-03d7-0392-ffff76122898e223"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v&gt;" StateOnly="true"/>
+					</C>
+					<C Type="Lox485sensor" V="112" U="0f4f26c0-033d-1a5b-ffff50dfea156200" Title="R1 DS2438 Vad" Cl="0,0,0" Nio="2" WF="16400" Check="c" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000">
+						<Co K="AQ" U="0f4f26c0-033d-1a59-ffff0d1c8c0e01ee"/>
+						<Co K="Q" U="0f4f26c0-033d-1a5a-ffff0d1c8c0e01ee"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v&gt;" StateOnly="true"/>
+					</C>
+					<C Type="Lox485sensor" V="112" U="0f4f277f-0276-401d-ffff50dfea156200" Title="R1 DS2438 Vsens" Cl="0,0,0" Nio="2" WF="16400" Check="rail1 1w 2612c3102004f \# \# \v" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000">
+						<Co K="AQ" U="0f4f277f-0276-401b-ffffe2b17c601933"/>
+						<Co K="Q" U="0f4f277f-0276-401c-ffffe2b17c601933"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v&gt;" StateOnly="true"/>
+					</C>
+					<C Type="Lox485sensor" V="112" U="0f4f280d-0178-58a1-ffff50dfea156200" Title="R1 AI1" Cl="0,0,0" Nio="2" WF="16400" Check="rail1 ai1 \v" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000">
+						<Co K="AQ" U="0f4f280d-0178-589f-ffffca2b763d213f"/>
+						<Co K="Q" U="0f4f280d-0178-58a0-ffffca2b763d213f"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v&gt;" StateOnly="true"/>
+					</C>
+					<C Type="Lox485sensor" V="112" U="0f4f363c-023b-b42a-ffff50dfea156200" Title="R1 DS18B20 temp" Cl="0,0,0" Nio="2" WF="16400" Check="rail1 1w 2812c3102004f \v" Signed="true" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000">
+						<Co K="AQ" U="0f4f363c-023b-b428-ffff9826185d7005"/>
+						<Co K="Q" U="0f4f363c-023b-b429-ffff9826185d7005"/>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v&gt;" StateOnly="true"/>
+					</C>
+				</C>
+				<C Type="ActorCaption" V="112" U="0f4f218a-0226-8c5c-ffff50dfea156200" Title="Aktory" WF="16384">
+					<C Type="Lox485actor" IName="Q9" V="112" U="0f4f248b-0068-dc16-ffff50dfea156200" Title="R1 Q1" Cl="0,0,0" Nio="1" WF="16400" CmdOn="rail1 do1 on\n" CmdOff="rail1 do1 off\n" SourceValHigh="100" DestValHigh="100">
+						<Co K="I" Nc="1" U="0f4f248b-0068-dc15-ffff2192378d2b1f">
+							<In Input="0f4f24a3-00e2-e2a5-ffff1df41c90a09b"/>
+						</Co>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+					<C Type="Lox485actor" IName="Q10" V="112" U="0f4f2973-009d-651b-ffff50dfea156200" Title="R1 PWM W" Cl="0,0,0" Nio="1" WF="16400" Analog="true" CmdOn="rail1 pwm1 &lt;v&gt;\n" SourceValHigh="100" DestValHigh="100">
+						<Co K="I" Nc="1" U="0f4f2973-009d-651a-ffff5a4b9883bbd6">
+							<In Input="0f4f29d7-02ca-70ee-ffff431b9fddf0be"/>
+						</Co>
+						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+						<Display Type="2" Unit="&lt;v.1&gt;" StateOnly="true"/>
+					</C>
+				</C>
+			</C>
+		</C>
+		<C Type="Program" V="112" U="0f4f2104-0381-8433-ffff50dfea156200" Title="Railduino UDP 485" Ref="0f4f2104-035f-83a6-ffff50dfea156200" WF="16384">
+			<C Type="Page" V="112" U="0f4f2104-0395-84e5-ffff50dfea156200" Title="Komunikace 485" WF="16384">
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<C Type="InputRef" V="112" U="0f4f21ad-0233-8f99-ffff50dfea156200" Title="R1 DI1" Px="3840" Py="2880" Px2="5952" Py2="3072" Cl="238,238,238" Nio="4" Ref="0f4f21aa-0327-8df5-ffff50dfea156200" WF="16384" LinkRefType="111">
+					<Co K="AI" Nc="1" U="0f4f21ad-0233-8f95-ffff1fcf63abfcfe">
+						<In Input="0f4f21aa-0327-8df3-ffff0b6a1c0ae553"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f4f21ad-0233-8f96-ffff1fcf63abfcfe">
+						<In Input="0f4f21aa-0327-8df4-ffff0b6a1c0ae553"/>
+					</Co>
+					<Co K="AQ" U="0f4f21ad-0233-8f97-ffff1fcf63abfcfe"/>
+					<Co K="Q" U="0f4f21ad-0233-8f98-ffff1fcf63abfcfe"/>
+				</C>
+				<C Type="InputRef" V="112" U="0f4f25ee-020b-0547-ffff50dfea156200" Title="R1 DS2438 Temp" Px="3840" Py="5856" Px2="5952" Py2="6048" Cl="238,238,238" Nio="4" Ref="0f4f25ec-03d7-0393-ffff50dfea156200" WF="16384" Analog="true" LinkRefType="111">
+					<Co K="AI" Nc="1" U="0f4f25ee-020b-0543-fffff351b4c4d708">
+						<In Input="0f4f25ec-03d7-0391-ffff76122898e223"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f4f25ee-020b-0544-fffff351b4c4d708">
+						<In Input="0f4f25ec-03d7-0392-ffff76122898e223"/>
+					</Co>
+					<Co K="AQ" U="0f4f25ee-020b-0545-fffff351b4c4d708"/>
+					<Co K="Q" U="0f4f25ee-020b-0546-fffff351b4c4d708"/>
+				</C>
+				<C Type="InputRef" V="112" U="0f4f26c3-0346-1c18-ffff50dfea156200" Title="R1 DS2438 Vad" Px="3840" Py="6912" Px2="5952" Py2="7104" Cl="238,238,238" Nio="4" Ref="0f4f26c0-033d-1a5b-ffff50dfea156200" WF="16384" Analog="true" LinkRefType="111">
+					<Co K="AI" Nc="1" U="0f4f26c3-0346-1c14-ffff3dfaa89eabe9">
+						<In Input="0f4f26c0-033d-1a59-ffff0d1c8c0e01ee"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f4f26c3-0346-1c15-ffff3dfaa89eabe9">
+						<In Input="0f4f26c0-033d-1a5a-ffff0d1c8c0e01ee"/>
+					</Co>
+					<Co K="AQ" U="0f4f26c3-0346-1c16-ffff3dfaa89eabe9"/>
+					<Co K="Q" U="0f4f26c3-0346-1c17-ffff3dfaa89eabe9"/>
+				</C>
+				<C Type="InputRef" V="112" U="0f4f27a4-039f-455a-ffff50dfea156200" Title="R1 DS2438 Vsens" Px="3840" Py="7872" Px2="5952" Py2="8064" Cl="238,238,238" Nio="4" Ref="0f4f277f-0276-401d-ffff50dfea156200" WF="16384" Analog="true" LinkRefType="111">
+					<Co K="AI" Nc="1" U="0f4f27a4-039f-4556-ffff5f6f993f4fc3">
+						<In Input="0f4f277f-0276-401b-ffffe2b17c601933"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f4f27a4-039f-4557-ffff5f6f993f4fc3">
+						<In Input="0f4f277f-0276-401c-ffffe2b17c601933"/>
+					</Co>
+					<Co K="AQ" U="0f4f27a4-039f-4558-ffff5f6f993f4fc3"/>
+					<Co K="Q" U="0f4f27a4-039f-4559-ffff5f6f993f4fc3"/>
+				</C>
+				<C Type="InputRef" V="112" U="0f4f2833-0212-5fbd-ffff50dfea156200" Title="R1 AI1" Px="3840" Py="4032" Px2="5952" Py2="4224" Cl="238,238,238" Nio="4" Ref="0f4f280d-0178-58a1-ffff50dfea156200" WF="16384" Analog="true" LinkRefType="111">
+					<Co K="AI" Nc="1" U="0f4f2833-0212-5fb9-ffff878a2df38167">
+						<In Input="0f4f280d-0178-589f-ffffca2b763d213f"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f4f2833-0212-5fba-ffff878a2df38167">
+						<In Input="0f4f280d-0178-58a0-ffffca2b763d213f"/>
+					</Co>
+					<Co K="AQ" U="0f4f2833-0212-5fbb-ffff878a2df38167"/>
+					<Co K="Q" U="0f4f2833-0212-5fbc-ffff878a2df38167"/>
+				</C>
+				<C Type="InputRef" V="112" U="0f4f3664-0209-bb8e-ffff50dfea156200" Title="R1 DS18B20 temp" Px="3840" Py="9216" Px2="5952" Py2="9408" Cl="238,238,238" Nio="4" Ref="0f4f363c-023b-b42a-ffff50dfea156200" WF="16384" Analog="true" LinkRefType="111">
+					<Co K="AI" Nc="1" U="0f4f3664-0209-bb8a-ffff7c5837f1b1da">
+						<In Input="0f4f363c-023b-b428-ffff9826185d7005"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f4f3664-0209-bb8b-ffff7c5837f1b1da">
+						<In Input="0f4f363c-023b-b429-ffff9826185d7005"/>
+					</Co>
+					<Co K="AQ" U="0f4f3664-0209-bb8c-ffff7c5837f1b1da"/>
+					<Co K="Q" U="0f4f3664-0209-bb8d-ffff7c5837f1b1da"/>
+				</C>
+				<C Type="Text" V="112" U="0f4f22e2-03c2-ad1d-ffff50dfea156200" Title="Poznámka" Px="6912" Py="2496" Px2="11803" Py2="3468" Cl="255,249,196" WF="16384" Text="Digitální vstup - nastavení
+- Vložit nový RS485 senzor
+- Nastavit Rozeznání příkazu:  rail1 di1 \v  
+ (&quot;rail&quot; + adresa Railduina + &quot; di&quot; + číslo dig. vstupu + &quot; \v&quot;)
+- Zašrktnout Použít jako Digitální vstup"/>
+				<C Type="Text" V="112" U="0f4f23f5-013a-cd79-ffff50dfea156200" Title="Poznámka" Px="5952" Py="864" Px2="11568" Py2="1068" Cl="255,249,196" WF="16384" Text="Komunikace Railduino - Loxone pomocí RS485 sériové komunikace"/>
+				<C Type="Text" V="112" U="0f4f2483-0256-da73-ffff40144eb3b5c9" Title="Poznámka" Px="6912" Py="10944" Px2="12269" Py2="12492" Cl="255,249,196" WF="16384" Text="Digitální výstup - nastavení
+
+- Vložit nový RS485 aktor
+- Nastavit Instrukce při zapnutí:  rail1 do1 on\ n
+ (&quot;rail&quot; + adresa Railduina + &quot; do&quot; + číslo dig. výstupu + &quot; on\ n&quot;)
+- Nastavit Instrukce při vypnutí:  rail1 do1 off\ n
+ (&quot;rail&quot; + adresa Railduina + &quot; do&quot; + číslo dig. výstupu + &quot; off\ n&quot;)
+- Zašrktnout Použít jako digitální výstup"/>
+				<C Type="Text" V="112" U="0f4f262f-011e-139f-ffff286c17df9ecd" Title="Poznámka" Px="6912" Py="5472" Px2="12666" Py2="6444" Cl="255,249,196" WF="16384" Text="1 wire - DS2438 - nastavení teplota
+- Vložit nový RS485 senzor
+- Nastavit Rozeznání příkazu:  rail1 1w 2612c3102004f \v
+ (&quot;rail&quot; + adresa Railduina + &quot; 1w &quot; + ser. číslo 1wire senzoru + &quot; \v&quot;)
+- Zašrktnout Použít jako Interpretace hodnot s předznaménkem"/>
+				<C Type="Text" V="112" U="0f4f272e-000b-2814-ffff62ce220b9559" Title="Poznámka" Px="6912" Py="6624" Px2="12873" Py2="7404" Cl="255,249,196" WF="16384" Text="1 wire - DS2438 - nastavení teplota
+- Vložit nový RS485 senzor
+- Nastavit Rozeznání příkazu:  rail1 1w 2612c3102004f \# \v
+ (&quot;rail&quot; + adresa Railduina + &quot; 1w &quot; + ser. číslo 1wire senzoru + &quot; \# \v&quot;)"/>
+				<C Type="Text" V="112" U="0f4f2777-0282-3e61-ffffc2117da2ab14" Title="Poznámka" Px="6912" Py="7584" Px2="13079" Py2="8364" Cl="255,249,196" WF="16384" Text="1 wire - DS2438 - nastavení teplota
+- Vložit nový RS485 senzor
+- Nastavit Rozeznání příkazu:  rail1 1w 2612c3102004f \# \# \v
+ (&quot;rail&quot; + adresa Railduina + &quot; 1w &quot; + ser. číslo 1wire senzoru + &quot; \# \# \v&quot;)"/>
+				<C Type="Text" V="112" U="0f4f27fd-014a-56dc-ffffa89a309d796a" Title="Poznámka" Px="6912" Py="3648" Px2="11803" Py2="4620" Cl="255,249,196" WF="16384" Text="Analogový vstup - nastavení
+- Vložit nový RS485 senzor
+- Nastavit Rozeznání příkazu:  rail1 ai1 \v  
+ (&quot;rail&quot; + adresa Railduina + &quot; ai&quot; + číslo dig. vstupu + &quot; \v&quot;)
+- hodnota je v mV"/>
+				<C Type="Text" V="112" U="0f4f2e96-02fc-748d-ffffd9dcfb597ffd" Title="Poznámka" Px="6912" Py="12672" Px2="12666" Py2="13836" Cl="255,249,196" WF="16384" Text="PWM výstup - nastavení
+
+- Vložit nový RS485 aktor
+- Nastavit Instrukce při zapnutí:  rail1 pwm1 &lt;v&gt;\ n
+ (&quot;rail&quot; + adresa Railduina + &quot; pwm&quot; + číslo pwm výstupu + &quot; &lt;v&gt;\ n&quot;)
+- Odškrtnout Použít jako digitální výstup"/>
+				<C Type="Text" V="112" U="0f4f3106-0118-8fb0-ffff863979e0a615" Title="Poznámka" Px="5952" Py="2208" Px2="6772" Py2="2412" Cl="255,249,196" WF="16384" Text="VSTUPY"/>
+				<C Type="Text" V="112" U="0f4f3114-0319-96f2-ffffae780af7f599" Title="Poznámka" Px="5952" Py="5280" Px2="6634" Py2="5484" Cl="255,249,196" WF="16384" Text="1 WIRE"/>
+				<C Type="Text" V="112" U="0f4f3124-0240-9c67-ffff00ed4ca85b5c" Title="Poznámka" Px="5952" Py="10752" Px2="6910" Py2="10956" Cl="255,249,196" WF="16384" Text="VÝSTUPY"/>
+				<C Type="Text" V="112" U="0f4f3633-017e-b07b-ffffd7f168a145dd" Title="Poznámka" Px="6912" Py="8832" Px2="12666" Py2="9804" Cl="255,249,196" WF="16384" Text="1 wire - DS18B20 - nastavení teplota
+- Vložit nový RS485 senzor
+- Nastavit Rozeznání příkazu:  rail1 1w 2812c3102004f \v
+ (&quot;rail&quot; + adresa Railduina + &quot; 1w &quot; + ser. číslo 1wire senzoru + &quot; \v&quot;)
+- Zašrktnout Použít jako Interpretace hodnot s předznaménkem"/>
+				<C Type="Text" V="112" U="0f503ecc-034e-0d42-ffff55f6e93cb32c" Title="Poznámka" Px="14112" Py="864" Px2="19486" Py2="1068" Cl="255,249,196" WF="16384" Text="Railduino - Loxone communication with use of RS485 serial bus"/>
+				<C Type="Text" V="112" U="0f503efb-0373-13c3-ffff37830770cd9c" Title="Poznámka" Px="15072" Py="2496" Px2="20136" Py2="3468" Cl="255,249,196" WF="16384" Text="Digital input - settings
+- Insert new RS485 sensor
+- Set command recognition:  rail1 di1 \v  
+ (&quot;rail&quot; + Railduino address + &quot; di&quot; + dig. input number + &quot; \v&quot;)
+- Check Use as Digital input box"/>
+				<C Type="Text" V="112" U="0f503efb-0373-13c4-ffff37830770cd9c" Title="Poznámka" Px="15072" Py="10944" Px2="20619" Py2="12492" Cl="255,249,196" WF="16384" Text="Digital output - settings
+
+- Insert new RS485 actor
+- Set Instruction when switched on: rail1 do1 on\ n
+ (&quot;rail&quot; + Railduino address + &quot; do&quot; + dig. output number + &quot; on\ n&quot;)
+- Set Instruction when switched off: rail1 do1 off\ n
+ (&quot;rail&quot; + Railduino address + &quot; do&quot; + dig. output number + &quot; off\ n&quot;)
+- Check Use as Digital output box"/>
+				<C Type="Text" V="112" U="0f503efb-0373-13c5-ffff37830770cd9c" Title="Poznámka" Px="15072" Py="5472" Px2="20619" Py2="6252" Cl="255,249,196" WF="16384" Text="1 wire DS2438 - settings Temp
+- Insert new RS485 sensor
+- Set command recognition:   rail1 1w 2612c3102004f \v
+ (&quot;rail&quot; + Railduino address + &quot; 1w&quot; + sensor serial number + &quot; \v&quot;)"/>
+				<C Type="Text" V="112" U="0f503efb-0373-13c6-ffff37830770cd9c" Title="Poznámka" Px="15072" Py="6624" Px2="20826" Py2="7404" Cl="255,249,196" WF="16384" Text="1 wire DS2438 - settings for Vad
+- Insert new RS485 sensor
+- Set command recognition:   rail1 1w 2612c3102004f \# \v
+ (&quot;rail&quot; + Railduino address + &quot; 1w&quot; + sensor serial number + &quot; \# \v&quot;)"/>
+				<C Type="Text" V="112" U="0f503efb-0373-13c7-ffff37830770cd9c" Title="Poznámka" Px="15072" Py="7584" Px2="21033" Py2="8364" Cl="255,249,196" WF="16384" Text="1 wire DS2438 - settings for Vsens
+- Insert new RS485 sensor
+- Set command recognition:   rail1 1w 2612c3102004f \# \# \v
+ (&quot;rail&quot; + Railduino address + &quot; 1w&quot; + sensor serial number + &quot; \# \# \v&quot;)"/>
+				<C Type="Text" V="112" U="0f503efb-0373-13c8-ffff37830770cd9c" Title="Poznámka" Px="15072" Py="3648" Px2="20239" Py2="4620" Cl="255,249,196" WF="16384" Text="Analog input - settings
+- Insert new RS485 sensor
+- Set command recognition:  rail1 ai1 \v  
+ (&quot;rail&quot; + Railduino address + &quot; ai&quot; + anal. input number + &quot; \v&quot;)
+- analog value is in mV"/>
+				<C Type="Text" V="112" U="0f503efb-0373-13c9-ffff37830770cd9c" Title="Poznámka" Px="15072" Py="12672" Px2="21015" Py2="13836" Cl="255,249,196" WF="16384" Text="PWM output - settings
+
+- Insert new RS485 actor
+- Set Instruction when switched on: rail1 pwm1 &lt;v&gt;\ n
+ (&quot;rail&quot; + Railduino address + &quot; pwm&quot; + pwm output number + &quot; &lt;v&gt;\ n&quot;)
+- Uncheck Use as Digital output box"/>
+				<C Type="Text" V="112" U="0f503efb-0373-13ca-ffff37830770cd9c" Title="Poznámka" Px="14112" Py="2208" Px2="14811" Py2="2412" Cl="255,249,196" WF="16384" Text="INPUTS"/>
+				<C Type="Text" V="112" U="0f503efb-0373-13cb-ffff37830770cd9c" Title="Poznámka" Px="14112" Py="5280" Px2="14794" Py2="5484" Cl="255,249,196" WF="16384" Text="1 WIRE"/>
+				<C Type="Text" V="112" U="0f503efb-0373-13cc-ffff37830770cd9c" Title="Poznámka" Px="14112" Py="10752" Px2="15018" Py2="10956" Cl="255,249,196" WF="16384" Text="OUTPUTS"/>
+				<C Type="Text" V="112" U="0f503efb-0373-13cd-ffff37830770cd9c" Title="Poznámka" Px="15072" Py="8928" Px2="20619" Py2="9708" Cl="255,249,196" WF="16384" Text="1 wire DS18B20 - settings Temp
+- Insert new RS485 sensor
+- Set command recognition:   rail1 1w 2812c3102004f \v
+ (&quot;rail&quot; + Railduino address + &quot; 1w&quot; + sensor serial number + &quot; \v&quot;)"/>
+				<C Type="OutputRef" V="112" U="0f4f24a3-00e2-e2a6-ffff50dfea156200" Title="R1 Q1" Px="3936" Py="11520" Px2="6048" Py2="11712" Cl="238,238,238" Nio="2" Ref="0f4f248b-0068-dc16-ffff50dfea156200" WF="16384" LinkRefType="114">
+					<Co K="AI" U="0f4f24a3-00e2-e2a4-ffff1df41c90a09b"/>
+					<Co K="AQ" U="0f4f24a3-00e2-e2a5-ffff1df41c90a09b"/>
+				</C>
+				<C Type="OutputRef" V="112" U="0f4f29d7-02ca-70ef-ffff50dfea156200" Title="R1 PWM W" Px="3936" Py="12960" Px2="6048" Py2="13152" Cl="238,238,238" Nio="2" Ref="0f4f2973-009d-651b-ffff50dfea156200" WF="16384" Analog="true" LinkRefType="114">
+					<Co K="AI" U="0f4f29d7-02ca-70ed-ffff431b9fddf0be"/>
+					<Co K="AQ" U="0f4f29d7-02ca-70ee-ffff431b9fddf0be"/>
+				</C>
+			</C>
+			<C Type="Page" V="112" U="0f503969-0350-17b8-ffff50dfea156200" Title="Komunikace UDP" WF="16384">
+				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
+				<C Type="InputRef" V="112" U="0f503acc-0080-4f48-ffff50dfea156200" Title="R1 DI1" Px="4032" Py="3072" Px2="6144" Py2="3264" Cl="238,238,238" Nio="4" Ref="0f503a25-0157-2b1d-ffff50dfea156200" LinkRefType="79">
+					<Co K="AI" Nc="1" U="0f503acc-0080-4f44-ffffca42817f42f5">
+						<In Input="0f503a25-0157-2b1b-ffff4e742497e676"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f503acc-0080-4f45-ffffca42817f42f5">
+						<In Input="0f503a25-0157-2b1c-ffff4e742497e676"/>
+					</Co>
+					<Co K="AQ" U="0f503acc-0080-4f46-ffffca42817f42f5"/>
+					<Co K="Q" U="0f503acc-0080-4f47-ffffca42817f42f5"/>
+				</C>
+				<C Type="InputRef" V="112" U="0f503b15-0117-5ef2-ffff50dfea156200" Title="R1 AI1" Px="4032" Py="4128" Px2="6144" Py2="4320" Cl="238,238,238" Nio="4" Ref="0f503ae2-0216-532e-ffff50dfea156200" Analog="true" LinkRefType="79">
+					<Co K="AI" Nc="1" U="0f503b15-0117-5eee-ffff3c5a7e100ced">
+						<In Input="0f503ae2-0216-532c-ffff0b27883bcd87"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f503b15-0117-5eef-ffff3c5a7e100ced">
+						<In Input="0f503ae2-0216-532d-ffff0b27883bcd87"/>
+					</Co>
+					<Co K="AQ" U="0f503b15-0117-5ef0-ffff3c5a7e100ced"/>
+					<Co K="Q" U="0f503b15-0117-5ef1-ffff3c5a7e100ced"/>
+				</C>
+				<C Type="InputRef" V="112" U="0f503b40-028f-6f08-ffff50dfea156200" Title="R1 DS2438 Temp" Px="4032" Py="6048" Px2="6144" Py2="6240" Cl="238,238,238" Nio="4" Ref="0f503b1a-0180-60ef-ffff50dfea156200" Analog="true" LinkRefType="79">
+					<Co K="AI" Nc="1" U="0f503b40-028f-6f04-ffff4b6f2e1bc4ab">
+						<In Input="0f503b1a-0180-60ed-ffff34dbcf69ab60"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f503b40-028f-6f05-ffff4b6f2e1bc4ab">
+						<In Input="0f503b1a-0180-60ee-ffff34dbcf69ab60"/>
+					</Co>
+					<Co K="AQ" U="0f503b40-028f-6f06-ffff4b6f2e1bc4ab"/>
+					<Co K="Q" U="0f503b40-028f-6f07-ffff4b6f2e1bc4ab"/>
+				</C>
+				<C Type="InputRef" V="112" U="0f503b43-0193-711b-ffff50dfea156200" Title="R1 DS2438 Vad" Px="4032" Py="7104" Px2="6144" Py2="7296" Cl="238,238,238" Nio="4" Ref="0f503b1c-00f1-62ef-ffff50dfea156200" Analog="true" LinkRefType="79">
+					<Co K="AI" Nc="1" U="0f503b43-0193-7117-ffff2b0ef3c732eb">
+						<In Input="0f503b1c-00f1-62ed-ffffeebf2e6d8086"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f503b43-0193-7118-ffff2b0ef3c732eb">
+						<In Input="0f503b1c-00f1-62ee-ffffeebf2e6d8086"/>
+					</Co>
+					<Co K="AQ" U="0f503b43-0193-7119-ffff2b0ef3c732eb"/>
+					<Co K="Q" U="0f503b43-0193-711a-ffff2b0ef3c732eb"/>
+				</C>
+				<C Type="InputRef" V="112" U="0f503b48-00f7-7333-ffff50dfea156200" Title="R1 DS2438 Vsens" Px="4032" Py="8064" Px2="6144" Py2="8256" Cl="238,238,238" Nio="4" Ref="0f503b1c-02d2-64f2-ffff50dfea156200" Analog="true" LinkRefType="79">
+					<Co K="AI" Nc="1" U="0f503b48-00f7-732f-ffff26d94cc1a717">
+						<In Input="0f503b1c-02d2-64f0-ffff1bf4a1217e7f"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f503b48-00f7-7330-ffff26d94cc1a717">
+						<In Input="0f503b1c-02d2-64f1-ffff1bf4a1217e7f"/>
+					</Co>
+					<Co K="AQ" U="0f503b48-00f7-7331-ffff26d94cc1a717"/>
+					<Co K="Q" U="0f503b48-00f7-7332-ffff26d94cc1a717"/>
+				</C>
+				<C Type="InputRef" V="112" U="0f503c0c-037f-8e2c-ffff50dfea156200" Title="R1 DS18B20 Temp" Px="4032" Py="9408" Px2="6144" Py2="9600" Cl="238,238,238" Nio="4" Ref="0f503bd6-02c2-85d0-ffff50dfea156200" Analog="true" LinkRefType="79">
+					<Co K="AI" Nc="1" U="0f503c0c-037f-8e28-ffffc787dd4b1d06">
+						<In Input="0f503bd6-02c2-85ce-ffff8f2efa8e1917"/>
+					</Co>
+					<Co K="I" Nc="1" U="0f503c0c-037f-8e29-ffffc787dd4b1d06">
+						<In Input="0f503bd6-02c2-85cf-ffff8f2efa8e1917"/>
+					</Co>
+					<Co K="AQ" U="0f503c0c-037f-8e2a-ffffc787dd4b1d06"/>
+					<Co K="Q" U="0f503c0c-037f-8e2b-ffffc787dd4b1d06"/>
+				</C>
+				<C Type="Text" V="112" U="0f5039ac-002a-1f2a-ffff126af979a48e" Title="Poznámka" Px="1536" Py="960" Px2="6841" Py2="1164" Cl="255,249,196" Text="Komunikace Railduino - Loxone pomocí UDP síťové komunikace"/>
+				<C Type="Text" V="112" U="0f5039bf-0285-210b-ffffc2570b45833a" Title="Poznámka" Px="7104" Py="2784" Px2="11995" Py2="3564" Cl="255,249,196" Text="- Vložit nový Virtuální UDP příkaz
+- Nastavit Rozeznání příkazu:  rail1 di1 \v  
+ (&quot;rail&quot; + adresa Railduina + &quot; di&quot; + číslo dig. vstupu + &quot; \v&quot;)
+- Zašrktnout Použít jako Digitální vstup"/>
+				<C Type="Text" V="112" U="0f5039bf-0285-210c-ffffc2570b45833a" Title="Poznámka" Px="7104" Py="3840" Px2="11995" Py2="4620" Cl="255,249,196" Text="- Vložit nový Virtuální UDP příkaz
+- Nastavit Rozeznání příkazu:  rail1 ai1 \v  
+ (&quot;rail&quot; + adresa Railduina + &quot; ai&quot; + číslo dig. vstupu + &quot; \v&quot;)
+- hodnota je v mV"/>
+				<C Type="Text" V="112" U="0f5039bf-0285-210d-ffffc2570b45833a" Title="Poznámka" Px="6144" Py="2400" Px2="6964" Py2="2604" Cl="255,249,196" Text="VSTUPY"/>
+				<C Type="Text" V="112" U="0f5039c9-01b9-22f6-ffff2ea01ba5cbf9" Title="Poznámka" Px="7104" Py="11424" Px2="12254" Py2="12588" Cl="255,249,196" Text="- Vložit nový Virtuální výstup příkazu
+- Nastavit Instrukce při zapnutí:  rail1 do1 on
+ (&quot;rail&quot; + adresa Railduina + &quot; do&quot; + číslo dig. výstupu + &quot; on&quot;)
+- Nastavit Instrukce při vypnutí:  rail1 do1 off
+ (&quot;rail&quot; + adresa Railduina + &quot; do&quot; + číslo dig. výstupu + &quot; off&quot;)
+- Zašrktnout Použít jako digitální výstup"/>
+				<C Type="Text" V="112" U="0f5039c9-01b9-22f7-ffff2ea01ba5cbf9" Title="Poznámka" Px="7104" Py="5664" Px2="12858" Py2="6636" Cl="255,249,196" Text="1 wire - DS2438 - nastavení teplota
+- Vložit nový Virtuální UDP příkaz
+- Nastavit Rozeznání příkazu:  rail1 1w 2612c3102004f \v
+ (&quot;rail&quot; + adresa Railduina + &quot; 1w &quot; + ser. číslo 1wire senzoru + &quot; \v&quot;)
+- Zašrktnout Použít jako Interpretace hodnot s předznaménkem"/>
+				<C Type="Text" V="112" U="0f5039c9-01b9-22f8-ffff2ea01ba5cbf9" Title="Poznámka" Px="7104" Py="6816" Px2="13065" Py2="7596" Cl="255,249,196" Text="1 wire - DS2438 - nastavení teplota
+- Vložit nový Virtuální UDP příkaz
+- Nastavit Rozeznání příkazu:  rail1 1w 2612c3102004f \# \v
+ (&quot;rail&quot; + adresa Railduina + &quot; 1w &quot; + ser. číslo 1wire senzoru + &quot; \# \v&quot;)"/>
+				<C Type="Text" V="112" U="0f5039c9-01b9-22f9-ffff2ea01ba5cbf9" Title="Poznámka" Px="7104" Py="7776" Px2="13271" Py2="8556" Cl="255,249,196" Text="1 wire - DS2438 - nastavení teplota
+- Vložit nový Virtuální UDP příkaz
+- Nastavit Rozeznání příkazu:  rail1 1w 2612c3102004f \# \# \v
+ (&quot;rail&quot; + adresa Railduina + &quot; 1w &quot; + ser. číslo 1wire senzoru + &quot; \# \# \v&quot;)"/>
+				<C Type="Text" V="112" U="0f5039c9-01b9-22fa-ffff2ea01ba5cbf9" Title="Poznámka" Px="7104" Py="13152" Px2="12651" Py2="13932" Cl="255,249,196" Text="- Vložit nový Virtuální výstup příkazu
+- Nastavit Instrukce při zapnutí:  rail1 pwm1 &lt;v&gt;
+ (&quot;rail&quot; + adresa Railduina + &quot; pwm&quot; + číslo pwm výstupu + &quot; &lt;v&gt;&quot;)
+- Odškrtnout Použít jako digitální výstup"/>
+				<C Type="Text" V="112" U="0f5039c9-01b9-22fb-ffff2ea01ba5cbf9" Title="Poznámka" Px="6144" Py="5472" Px2="6826" Py2="5676" Cl="255,249,196" Text="1 WIRE"/>
+				<C Type="Text" V="112" U="0f5039c9-01b9-22fc-ffff2ea01ba5cbf9" Title="Poznámka" Px="5952" Py="10944" Px2="6910" Py2="11148" Cl="255,249,196" Text="VÝSTUPY"/>
+				<C Type="Text" V="112" U="0f5039c9-01b9-22fd-ffff2ea01ba5cbf9" Title="Poznámka" Px="7104" Py="9024" Px2="12858" Py2="9996" Cl="255,249,196" Text="1 wire - DS18B20 - nastavení teplota
+- Vložit nový Virtuální UDP příkaz
+- Nastavit Rozeznání příkazu:  rail1 1w 2812c3102004f \v
+ (&quot;rail&quot; + adresa Railduina + &quot; 1w &quot; + ser. číslo 1wire senzoru + &quot; \v&quot;)
+- Zašrktnout Použít jako Interpretace hodnot s předznaménkem"/>
+				<C Type="Text" V="112" U="0f503db2-0095-d45d-ffff50dfea156200" Title="Poznámka" Px="7104" Py="2400" Px2="11236" Py2="2604" Cl="255,249,196" Text="- Vložit nový Virtuální UDP vstup s portem 55555"/>
+				<C Type="Text" V="112" U="0f503df0-01e6-e587-ffff624711f570b9" Title="Poznámka" Px="7104" Py="10944" Px2="9994" Py2="11148" Cl="255,249,196" Text="- Vložit nový Virtuální UDP výstup"/>
+				<C Type="Text" V="112" U="0f518697-01e4-0f9b-ffffa60d8aac68f9" Title="Poznámka" Px="14496" Py="2784" Px2="19680" Py2="3564" Cl="255,249,196" Text="- Insert new Virtual UDP command
+- Set command recognition:  rail1 di1 \v  
+ (&quot;rail&quot; + adress of Railduino + &quot; di&quot; + dig. input number + &quot; \v&quot;)
+- Check the Use as Digital input box"/>
+				<C Type="Text" V="112" U="0f518697-01e4-0f9c-ffffa60d8aac68f9" Title="Poznámka" Px="14496" Py="3840" Px2="19939" Py2="4620" Cl="255,249,196" Text="- Insert new Virtual UDP command
+- Set command recognition:  rail1 ai1 \v  
+ (&quot;rail&quot; + adress of Railduino + &quot; ai&quot; + analog input number + &quot; \v&quot;)
+- the value is in mV"/>
+				<C Type="Text" V="112" U="0f518697-01e4-0f9d-ffffa60d8aac68f9" Title="Poznámka" Px="13536" Py="2400" Px2="14235" Py2="2604" Cl="255,249,196" Text="INPUTS"/>
+				<C Type="Text" V="112" U="0f518697-01e4-0f9e-ffffa60d8aac68f9" Title="Poznámka" Px="14496" Py="2400" Px2="18714" Py2="2604" Cl="255,249,196" Text="- Insert new Virtual UDP input with the port 55555"/>
+				<C Type="Text" V="112" U="0f5186a5-03c4-140c-ffff6bb7a5d8fb53" Title="Poznámka" Px="13536" Py="1056" Px2="19686" Py2="1260" Cl="255,249,196" Text="Railduino - Loxone communication with use of UDP packets and LAN bus"/>
+				<C Type="Text" V="112" U="0f518751-0316-2805-ffff7a76162eeec5" Title="Poznámka" Px="14496" Py="11424" Px2="19956" Py2="12588" Cl="255,249,196" Text="- Insert new Virtual command output
+- Set switch on instruction:  rail1 do1 on  
+ (&quot;rail&quot; + adress of Railduino + &quot; do&quot; + dig. output number + &quot; on&quot;)
+- Set switch off instruction:  rail1 do1 off  
+ (&quot;rail&quot; + adress of Railduino + &quot; do&quot; + dig. output number + &quot; off&quot;)
+- Check the Use as Digital ouput box"/>
+				<C Type="Text" V="112" U="0f518751-0316-2806-ffff7a76162eeec5" Title="Poznámka" Px="14496" Py="5664" Px2="20439" Py2="6444" Cl="255,249,196" Text="1 wire - DS2438 - temperature settings
+- Insert new Virtual UDP command
+- Set command recognition:  rail1 1w 2612c3102004f \v
+ (&quot;rail&quot; +  adress of Railduino + &quot; 1w &quot; + 1wire sensor serial no. + &quot; \v&quot;)"/>
+				<C Type="Text" V="112" U="0f518751-0316-2807-ffff7a76162eeec5" Title="Poznámka" Px="14496" Py="6816" Px2="20698" Py2="7596" Cl="255,249,196" Text="1 wire - DS2438 - Vad settings
+- Insert new Virtual UDP command
+- Set command recognition:  rail1 1w 2612c3102004f \# \v
+ (&quot;rail&quot; +  adress of Railduino + &quot; 1w &quot; + 1wire sensor serial no. + &quot; \#  \v&quot;)"/>
+				<C Type="Text" V="112" U="0f518751-0316-2808-ffff7a76162eeec5" Title="Poznámka" Px="14496" Py="7776" Px2="20853" Py2="8556" Cl="255,249,196" Text="1 wire - DS2438 - Vsens settings
+- Insert new Virtual UDP command
+- Set command recognition:  rail1 1w 2612c3102004f \# \# \v
+ (&quot;rail&quot; +  adress of Railduino + &quot; 1w &quot; + 1wire sensor serial no. + &quot; \# \# \v&quot;)"/>
+				<C Type="Text" V="112" U="0f518751-0316-2809-ffff7a76162eeec5" Title="Poznámka" Px="14496" Py="13152" Px2="20353" Py2="13932" Cl="255,249,196" Text="- Insert new Virtual command output
+- Set switch on instruction:  rail1 pwm1 &lt;v&gt;  
+ (&quot;rail&quot; + adress of Railduino + &quot; pwm&quot; + pwm output number + &quot; &lt;v&gt;&quot;)
+- Uncheck the Use as Digital ouput box"/>
+				<C Type="Text" V="112" U="0f518751-0316-280a-ffff7a76162eeec5" Title="Poznámka" Px="13536" Py="5472" Px2="14218" Py2="5676" Cl="255,249,196" Text="1 WIRE"/>
+				<C Type="Text" V="112" U="0f518751-0316-280b-ffff7a76162eeec5" Title="Poznámka" Px="13344" Py="10944" Px2="14250" Py2="11148" Cl="255,249,196" Text="OUTPUTS"/>
+				<C Type="Text" V="112" U="0f518751-0316-280c-ffff7a76162eeec5" Title="Poznámka" Px="14496" Py="9024" Px2="20439" Py2="9804" Cl="255,249,196" Text="1 wire - DS18B20 - temperature settings
+- Insert new Virtual UDP command
+- Set command recognition:  rail1 1w 2812c3102004f \v
+ (&quot;rail&quot; +  adress of Railduino + &quot; 1w &quot; + 1wire sensor serial no. + &quot; \v&quot;)"/>
+				<C Type="Text" V="112" U="0f518751-0316-280d-ffff7a76162eeec5" Title="Poznámka" Px="14496" Py="10944" Px2="17162" Py2="11148" Cl="255,249,196" Text="- Insert new Virtual UDP output"/>
+				<C Type="OutputRef" V="112" U="0f503ce0-0080-b885-ffff50dfea156200" Title="R1 PWM1" Px="4032" Py="13440" Px2="6144" Py2="13632" Cl="238,238,238" Nio="2" Ref="0f503c98-0290-abb7-ffff50dfea156200" WF="16384" Analog="true" LinkRefType="74">
+					<Co K="AI" U="0f503ce0-0080-b883-ffff5152e809e9b0"/>
+					<Co K="AQ" U="0f503ce0-0080-b884-ffff5152e809e9b0"/>
+				</C>
+				<C Type="OutputRef" V="112" U="0f503c88-0242-a995-ffff50dfea156200" Title="R1 DO1" Px="4032" Py="11904" Px2="6144" Py2="12096" Cl="238,238,238" Nio="2" Ref="0f503c5a-0141-9ce5-ffff50dfea156200" WF="16384" LinkRefType="74">
+					<Co K="AI" U="0f503c88-0242-a993-ffff5236e10a84e5"/>
+					<Co K="AQ" U="0f503c88-0242-a994-ffff5236e10a84e5"/>
+				</C>
+			</C>
+		</C>
+	</C>
+</ControlList>
