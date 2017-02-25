@@ -1,1 +1,3 @@
 - repeat DI status after some time (for long-connected contacts such as window detectors etc ...)
+- debouncing of DIs - eliminate short on-off-on-off signals
+- check if 485 bus is free to send the message
