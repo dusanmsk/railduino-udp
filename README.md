@@ -2,6 +2,22 @@
 
 New official firmware for Railduino v1.3 based on UDP / 485 broadcasts (LAN / serial bus)
 
+Key features:
+---------------
+
+- 24x digital inputs - max. voltage 24V DC / each
+- 12x relay outputs – max. current 5A at 230V AC / each
+- 3x analog inputs – input voltage 0 - 10V
+- 4x PWM digital outputs – max 25 W / each, max 24V DC
+- 1-wire – DS18B20 or DS2438 sensors 
+- RS485 – e.g. Loxone Modbus or RS485 extension
+- USB – programming purposes
+- Ethernet – LAN (optional)
+- LED diode
+- Reset button
+- DIP switch
+- Terminator jumper
+
 UDP / 485 syntax:
 ---------------------
  
