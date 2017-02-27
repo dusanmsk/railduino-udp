@@ -1,4 +1,4 @@
-# railduino-udp-485
+# Railduino v1.3 UDP 485 firmware
 
 New official firmware for Railduino v1.3 based on UDP / 485 broadcasts (LAN / serial bus)
 
