@@ -1,5 +1,5 @@
 /*
-    Copyright (C) 2017  Ing. Pavel Sedlacek, Dusan Zatkovsky
+    Copyright (C) 2017  Ing. Pavel Sedlacek, Dusan Zatkovsky, Milan Brejl
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -30,8 +30,8 @@
      
 */
 
-#define dbg(x) Serial.println(x);
-//#define dbg(x) ;
+//#define dbg(x) Serial.println(x);
+#define dbg(x) ;
 
 #include <OneWire.h>
 #include <DS2438.h>
@@ -57,23 +57,26 @@ EthernetUDP udpSend;
 
 #define serialTxControl 8
 #define oneWireCycle 30000
+#define oneWireSubCycle 5000
 #define anaInputCycle 500
-#define statusLedTimeOn 53
-#define statusLedTimeOff 950
+#define statusLedTimeOn 50
+#define statusLedTimeOff 990
+#define debouncingTime 5
  
 #define numOfRelays 12
-int relayPins[] = {39, 41, 43, 45, 47, 49, 23, 25, 27, 29, 31, 33};
+int relayPins[numOfRelays] = {39, 41, 43, 45, 47, 49, 23, 25, 27, 29, 31, 33};
 #define numOfPwms 4
-int pwmPins[] = {11, 13, 12, 7};
+int pwmPins[numOfPwms] = {11, 13, 12, 7};
 #define numOfAnaInputs 3
-int analogPins[] = {58, 59, 62};
+int analogPins[numOfAnaInputs] = {58, 59, 62};
 int analogStatus[numOfAnaInputs];
 #define numOfDigInputs 24
-int inputPins[] = {36, 34, 48, 46, 69, 68, 67, 66, 44, 42, 40, 38, 6, 5, 3, 2, 14, 15, 16, 17, 24, 26, 28, 30};
+int inputPins[numOfDigInputs] = {36, 34, 48, 46, 69, 68, 67, 66, 44, 42, 40, 38, 6, 5, 3, 2, 14, 15, 16, 17, 24, 26, 28, 30};
 int inputStatus[numOfDigInputs];
+int inputStatusNew[numOfDigInputs];
+int inputChangeTimestamp[numOfDigInputs];
 #define numOfDipSwitchPins 4
-int dipSwitchPins[] = {54, 55, 56, 57};
-
+int dipSwitchPins[numOfDipSwitchPins] = {54, 55, 56, 57};
 
 int statusLedPin = 32;
 int boardAddress = 0;
@@ -114,13 +117,14 @@ void Timer::sleep(unsigned long sleepTimeMs) {
 Timer statusLedTimerOn;
 Timer statusLedTimerOff;
 Timer oneWireTimer;
+Timer oneWireSubTimer;
 Timer analogTimer;
 
 OneWire ds(9);
 byte oneWireData[12];
 byte oneWireAddr[8];
 
-#define maxSensors 5
+#define maxSensors 10
 byte readstage = 0, resolution = 11;
 byte sensors[maxSensors][8], DS2438count, DS18B20count;
 byte sensors2438[maxSensors][8], sensors18B20[maxSensors][8];
@@ -131,6 +135,7 @@ void setup() {
 
     Serial.begin(9600);
     Serial1.begin(115200);
+    Serial1.setTimeout(50);
 
     for (int i = 0; i < numOfDigInputs; i++) {
         pinMode(inputPins[i], INPUT_PULLUP);
@@ -160,13 +165,8 @@ void setup() {
 
     for (int i = 0; i < numOfDipSwitchPins; i++) {
         pinMode(dipSwitchPins[i], INPUT);
+        if (!digitalRead(dipSwitchPins[i])) { boardAddress |= (1 << i); }
     }
-
-    if (!digitalRead(54)) { boardAddress |= 1; }
-    if (!digitalRead(55)) { boardAddress |= 2; }
-    if (!digitalRead(56)) { boardAddress |= 4; }
-    if (!digitalRead(57)) { boardAddress |= 8; }
-
     boardAddressStr = String(boardAddress);  
     boardAddressRailStr = railStr + String(boardAddress);
 
@@ -188,18 +188,24 @@ void setup() {
 }
 
 void loop() {
-
-    if (statusLedTimerOff.isOver()) { digitalWrite(statusLedPin,255); }
-    if (statusLedTimerOn.isOver()) { digitalWrite(statusLedPin,0); }   
   
     readInputs();
 
     processCommands();
 
     processOnewire();
- 
+
+    statusLed();
 }
 
+void statusLed() {
+    if (statusLedTimerOff.isOver()) { 
+       statusLedTimerOn.sleep(statusLedTimeOn);
+       statusLedTimerOff.sleep(statusLedTimeOff);
+       digitalWrite(statusLedPin,HIGH);  
+    }  
+    if (statusLedTimerOn.isOver()) { digitalWrite(statusLedPin,LOW); } 
+}
 
 String oneWireAddressToString(byte addr[]) {
     String s = "";
@@ -210,22 +216,22 @@ String oneWireAddressToString(byte addr[]) {
 }
 
 void lookUpSensors(){
-  byte j=0, k=1, l=0, m=1;
+  byte j=0, k=0, l=0, m=0;
   while ((j <= maxSensors) && (ds.search(sensors[j]))){
-    if (!OneWire::crc8(sensors[j], 7) != sensors[j][7]){
+     if (!OneWire::crc8(sensors[j], 7) != sensors[j][7]){
         if (sensors[j][0] == 38){
-          for (l=0;l<8;l++){ sensors2438[k][l]=sensors[j][l]; }  
-          k++;  
+           for (l=0;l<8;l++){ sensors2438[k][l]=sensors[j][l]; }  
+           k++;  
         } else {
-          for (l=0;l<8;l++){ sensors18B20[m][l]=sensors[j][l]; }
-          m++;
-          dssetresolution(ds,sensors[j],resolution);
+           for (l=0;l<8;l++){ sensors18B20[m][l]=sensors[j][l]; }
+           m++;
+           dssetresolution(ds,sensors[j],resolution);
         }
-    }
-    j++;
+     }
+     j++;
   }
-  DS2438count = k-1;
-  DS18B20count = m-1;
+  DS2438count = k;
+  DS18B20count = m;
 }
 
 void dssetresolution(OneWire ow, byte addr[8], byte resolution) {
@@ -260,73 +266,98 @@ float dsreadtemp(OneWire ow, byte addr[8]) {
     data[i] = ow.read();
   }
 
-  int TReading = (data[1] << 8) | data[0];
-  int SignBit = TReading & 0x8000;
-  
-  if (SignBit)                    
-  {
-    TReading = (TReading ^ 0xffff) + 1; 
-    celsius = -1 * TReading * 0.0625;
-  } else {
-    celsius = TReading * 0.0625;
-  }
-  
+  int16_t TReading = (data[1] << 8) | data[0];  
+  celsius = 0.0625 * TReading;
   return celsius;
 }
 
 
 void processOnewire() {
-
-    if (!oneWireTimer.isOver()) {
-        return;  
-    }
-
-   dbg("processing onewire");
-   oneWireTimer.sleep(oneWireCycle);   
+   static byte oneWireState = 0;
+   static byte oneWireCnt = 0;
    
-   byte m=1,n=1;
-   while ((m <= DS2438count)){              
-      ds2438.begin();
-      ds2438.update(sensors2438[m]);
-      if (!ds2438.isError()) {
-        float TempArrayDS2438[15];
-        TempArrayDS2438[m] = ds2438.getTemperature();          
-        TempArrayDS2438[m+1] = ds2438.getVoltage(DS2438_CHA);   
-        TempArrayDS2438[m+2] = ds2438.getVoltage(DS2438_CHB);
-        sendMsg("1w " + oneWireAddressToString(sensors2438[m]) + " " + String(TempArrayDS2438[m], 2) + " " + String(TempArrayDS2438[m+1], 2) + " " + String(TempArrayDS2438[m+2], 2));
-     }
-     m++;
+   dbg("Processing onewire - oneWireState: " +  String(oneWireState) + ", oneWireCnt: " +  String(oneWireCnt));
+
+   switch(oneWireState)
+   {
+   case 0:
+      if (!oneWireTimer.isOver()) {
+         return;  
+      }
+      oneWireTimer.sleep(oneWireCycle);   
+      oneWireSubTimer.sleep(oneWireSubCycle);   
+      oneWireCnt = 0;
+      oneWireState++;
+      break;
+   case 1:
+      if (!oneWireSubTimer.isOver()) {
+        return;
+      }
+      if ((oneWireCnt < DS2438count)){          
+         ds2438.begin();
+         ds2438.update(sensors2438[oneWireCnt]);
+         if (!ds2438.isError()) {
+            sendMsg("1w " + oneWireAddressToString(sensors2438[oneWireCnt]) + " " + String(ds2438.getTemperature(), 2) + " " + String(ds2438.getVoltage(DS2438_CHA), 2) + " " + String(ds2438.getVoltage(DS2438_CHB), 2));
+         }
+         oneWireCnt++;
+      } else {
+        oneWireCnt = 0;
+        oneWireState++;
+      }
+      break;
+   case 2:
+      if (!oneWireSubTimer.isOver()) {
+         return;
+      }
+      if ((oneWireCnt < DS18B20count)){  
+         dsconvertcommand(ds,sensors18B20[oneWireCnt]);            
+         oneWireCnt++;
+      } else {
+        oneWireCnt = 0;
+        oneWireState++;
+      }
+      break;
+   case 3:
+      if (!oneWireSubTimer.isOver()) {
+         return;
+      }
+      if ((oneWireCnt < DS18B20count)){  
+         sendMsg("1w " + oneWireAddressToString(sensors18B20[oneWireCnt]) + " " + String(dsreadtemp(ds,sensors18B20[oneWireCnt]), 2));
+         oneWireCnt++;
+      } else {
+        oneWireState = 0;
+      }
+      break;
    }
-       
-   while ((n <= DS18B20count)){
-      if (readstage == 0){
-        dsconvertcommand(ds,sensors18B20[n]);
-        readstage++;
-      } else {                                                    
-        if (ds.read()) {  
-          float TempArrayDS18B20[5];
-          TempArrayDS18B20[n] = dsreadtemp(ds,sensors18B20[n]);
-          sendMsg("1w " + oneWireAddressToString(sensors18B20[n]) + " " + String(TempArrayDS18B20[n], 2));
-          readstage=0; 
-        }
-      }   
-    n++;   
-   }
+
+    
 }
 
 
 void readInputs() {
-    
+
+    int timestamp = millis();
     for (int i = 0; i < numOfDigInputs; i++) {      
-       int pin = inputPins[i];
-       int value = digitalRead(pin);
        int oldValue = inputStatus[i];
-       inputStatus[i] = value;
-       if (value < oldValue) {
-        sendInputOn(i + 1);
-       }
-       if (value > oldValue) {
-        sendInputOff(i + 1);
+       int newValue = inputStatusNew[i];
+       int curValue = digitalRead(inputPins[i]);
+       
+       if(oldValue != newValue) {
+          if(newValue != curValue) {
+             inputStatusNew[i] = curValue;
+          } else if(timestamp - inputChangeTimestamp[i] > debouncingTime) {
+             inputStatus[i] = newValue;
+             if(!newValue) {
+                sendInputOn(i + 1);
+             } else {
+                sendInputOff(i + 1);
+             }
+          }
+       } else {
+          if(oldValue != curValue) {
+             inputStatusNew[i] = curValue;
+             inputChangeTimestamp[i] = timestamp;
+          }
        }
     }
     
@@ -389,35 +420,36 @@ void setPWM(int pwm, int value) {
     analogWrite(pwmPins[pwm], value);
 }
 
-String receivePacket() {
-    String cmd = "";    
-    
-    while (Serial1.available()) {    
-      cmd = Serial1.readStringUntil('\n'); 
-      if (cmd.startsWith(boardAddressRailStr)) {
-            cmd.replace(boardAddressRailStr, "");
-            cmd.trim();
-            return cmd;
-        }
-    }     
+boolean receivePacket(String *cmd) {
 
+    while (Serial1.available() > 0) {    
+      *cmd = Serial1.readStringUntil('\n'); 
+      if (cmd->startsWith(boardAddressRailStr)) {
+        cmd->replace(boardAddressRailStr, "");
+        cmd->trim();
+        return true;
+      }   
+    }   
+   
     int packetSize = udpRecv.parsePacket();
     if (packetSize) {
         memset(inputPacketBuffer, 0, sizeof(inputPacketBuffer));
         udpRecv.read(inputPacketBuffer, inputPacketBufferSize);
-        String cmd = String(inputPacketBuffer);
-        if (cmd.startsWith(boardAddressRailStr)) {
-            cmd.replace(boardAddressRailStr, "");
-            cmd.trim();
-            return cmd;
+        *cmd = String(inputPacketBuffer);
+        if (cmd->startsWith(boardAddressRailStr)) {
+            cmd->replace(boardAddressRailStr, "");
+            cmd->trim();
+            return true;
         }
     }
-    return "";
+    return false;
 }
 
+
 void processCommands() {
-    String cmd = receivePacket();
-    if (cmd != "") {
+    String cmd;
+    if (receivePacket(&cmd)) {
+        dbg(cmd);
         if (cmd.startsWith(relayStr)) {
             for (int i = 0; i < numOfRelays; i++) {
                 if (cmd == relayOnCommands[i]) {
