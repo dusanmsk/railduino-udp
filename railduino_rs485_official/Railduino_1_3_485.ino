@@ -59,8 +59,9 @@ EthernetUDP udpSend;
 #define oneWireCycle 30000
 #define oneWireSubCycle 5000
 #define anaInputCycle 500
-#define statusLedTimeOn 53
-#define statusLedTimeOff 950
+#define statusLedTimeOn 50
+#define statusLedTimeOff 990
+#define debouncingTime 5
  
 #define numOfRelays 12
 int relayPins[numOfRelays] = {39, 41, 43, 45, 47, 49, 23, 25, 27, 29, 31, 33};
@@ -72,6 +73,8 @@ int analogStatus[numOfAnaInputs];
 #define numOfDigInputs 24
 int inputPins[numOfDigInputs] = {36, 34, 48, 46, 69, 68, 67, 66, 44, 42, 40, 38, 6, 5, 3, 2, 14, 15, 16, 17, 24, 26, 28, 30};
 int inputStatus[numOfDigInputs];
+int inputStatusNew[numOfDigInputs];
+int inputChangeTimestamp[numOfDigInputs];
 #define numOfDipSwitchPins 4
 int dipSwitchPins[numOfDipSwitchPins] = {54, 55, 56, 57};
 
@@ -185,19 +188,24 @@ void setup() {
 }
 
 void loop() {
-
-    if (statusLedTimerOff.isOver()) { digitalWrite(statusLedPin,HIGH); }  
-    if (statusLedTimerOn.isOver()) { digitalWrite(statusLedPin,LOW); }    
-   
+  
     readInputs();
 
     processCommands();
 
     processOnewire();
 
-
+    statusLed();
 }
 
+void statusLed() {
+    if (statusLedTimerOff.isOver()) { 
+       statusLedTimerOn.sleep(statusLedTimeOn);
+       statusLedTimerOff.sleep(statusLedTimeOff);
+       digitalWrite(statusLedPin,HIGH);  
+    }  
+    if (statusLedTimerOn.isOver()) { digitalWrite(statusLedPin,LOW); } 
+}
 
 String oneWireAddressToString(byte addr[]) {
     String s = "";
@@ -328,16 +336,28 @@ void processOnewire() {
 
 void readInputs() {
 
+    int timestamp = millis();
     for (int i = 0; i < numOfDigInputs; i++) {      
-       int pin = inputPins[i];
-       int value = digitalRead(pin);
        int oldValue = inputStatus[i];
-       inputStatus[i] = value;
-       if (value < oldValue) {
-        sendInputOn(i + 1);
-       }
-       if (value > oldValue) {
-        sendInputOff(i + 1);
+       int newValue = inputStatusNew[i];
+       int curValue = digitalRead(inputPins[i]);
+       
+       if(oldValue != newValue) {
+          if(newValue != curValue) {
+             inputStatusNew[i] = curValue;
+          } else if(timestamp - inputChangeTimestamp[i] > debouncingTime) {
+             inputStatus[i] = newValue;
+             if(!newValue) {
+                sendInputOn(i + 1);
+             } else {
+                sendInputOff(i + 1);
+             }
+          }
+       } else {
+          if(oldValue != curValue) {
+             inputStatusNew[i] = curValue;
+             inputChangeTimestamp[i] = timestamp;
+          }
        }
     }
     
