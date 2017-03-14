@@ -61,8 +61,8 @@ Uploading custom firmware to your Railduino (easy way):
 - disassemble railduino din case to get to the usb port (if not accesible from outside)
 - connect railduino to PC with standard A-B usb cable
 - run xloader
-  - for Ethernet version choose file railduino_udp_485_official/Railduino_1_3_485_UDP.ino.with_bootloader.mega.hex
-  - for no Ethernet version choose file railduino_RS485_official/Railduino_1_3_485.ino.with_bootloader.mega.hex
+  - for Ethernet version choose file railduino_udp_485_official/Railduino_1_3_485_UDP.ino.mega.hex
+  - for no Ethernet version choose file railduino_RS485_official/Railduino_1_3_485.ino.mega.hex
   - choose device Mega(ATMEGA2560) !!
   - choose the serial port where Railduino is connected to
   - upload the firmware 
