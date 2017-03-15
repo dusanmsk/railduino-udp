@@ -57,13 +57,14 @@ your Loxone Config to create new inputs and outputs etc... (you should found exa
 
 Uploading custom firmware to your Railduino (easy way):
 
-- download xloader utility from http://xloader.russemotto.com/
-- disassemble railduino din case to get to the usb port (if not accesible from outside)
-- connect railduino to PC with standard A-B usb cable
-- run xloader
+- download uploader utility "uploader.zip" from the uploader folder and unzip
+- download version of hex file you want to upload to your Railduino into the same folder as the unzipped uploader file
   - for Ethernet version choose file railduino_udp_485_official/Railduino_1_3_485_UDP.ino.mega.hex
   - for no Ethernet version choose file railduino_RS485_official/Railduino_1_3_485.ino.mega.hex
-  - choose device Mega(ATMEGA2560) !!
-  - choose the serial port where Railduino is connected to
-  - upload the firmware 
+- disassemble railduino din case to get to the usb port (if not accesible from outside)
+- connect railduino to PC with standard A-B usb cable
+- run RAILDUINO HEX UPLOAD.bat file
+  - write the com port which the railduino is connected to - e.g. COM18
+  - write file name which you want to upload - e.g. Railduino_1_3_485.ino.mega.hex
+  - upload the firmware - after succesfull upload you should see table of stats with the press key to continue...
   
