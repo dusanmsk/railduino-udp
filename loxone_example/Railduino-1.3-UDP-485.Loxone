@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ControlList Version="126" LxAV="5" NextObj="17" NextConst="1" NextNote="1" NextMem="1">
-	<C Type="Document" V="112" U="0f4f2104-0316-81f8-ffff50dfea156200" Title="Railduino UDP 485" ConfigVersion="8011111" PaperFormat="2" SPSfreq="100" OpenIsHigh="false" Date="2017-03-09 11:32:56" CDate="" BDate="" DateS="258291176" Town="Vídeň" Ctry="" Latitude="48.2" Longitude="13.36" Creator="Ing. Pavel Sedláček" Tel="+420 777 729 833" EMail="info@sedtronic.cz" Web="www.sedtronic.cz" Logo="" uuidNotifications="0f4f2104-0315-81f7-ffff50dfea156200" Currency="€" UpdTime="120" CrashL="true" NumO="375">
+	<C Type="Document" V="112" U="0f4f2104-0316-81f8-ffff50dfea156200" Title="Railduino UDP 485" ConfigVersion="8011111" PaperFormat="2" SPSfreq="100" OpenIsHigh="false" Date="2017-03-23 09:55:18" CDate="" BDate="" DateS="259494918" Town="Vídeň" Ctry="" Latitude="48.2" Longitude="13.36" Creator="Ing. Pavel Sedláček" Tel="+420 777 729 833" EMail="info@sedtronic.cz" Web="www.sedtronic.cz" Logo="" uuidNotifications="0f4f2104-0315-81f7-ffff50dfea156200" Currency="€" UpdTime="120" CrashL="true" NumO="375">
 		<C Type="LoxCaption" V="112" U="0f4f2104-0317-81fa-ffff50dfea156200" Title="Symboly" Cl="0,0,0" WF="16384" CaptionType="5">
 			<C Type="IconCaptionState" V="112" U="0f4f2104-0318-81fc-ffff50dfea156200" Title="Symboly statusů" WF="16384">
 				<C Type="IconState" V="112" U="00000000-0000-0001-2200000000000000" Title="Nepřiřazeno" WF="16384"/>
@@ -708,11 +708,11 @@
 					<Display Unit="&lt;v&gt;" StateOnly="true" IxText="8"/>
 				</C>
 				<C Type="SensorCaption" V="112" U="0f4f218a-0225-8c5a-ffff50dfea156200" Title="Senzory" WF="16384">
-					<C Type="Lox485sensor" V="112" U="0f4f21aa-0327-8df5-ffff50dfea156200" Title="R1 DI1" Cl="0,0,0" Nio="2" WF="16400" Check="rail1 di1 \v" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000">
+					<C Type="Lox485sensor" V="112" U="0f4f21aa-0327-8df5-ffff50dfea156200" Title="R1 DI1" Cl="0,0,0" Nio="2" WF="16400" Check="rail1 di1 \v" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000">
 						<Co K="AQ" U="0f4f21aa-0327-8df3-ffff0b6a1c0ae553"/>
 						<Co K="Q" U="0f4f21aa-0327-8df4-ffff0b6a1c0ae553"/>
 						<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
-						<Display Unit="&lt;v&gt;" StateOnly="true"/>
+						<Display Type="2" Unit="&lt;v&gt;" StateOnly="true"/>
 					</C>
 					<C Type="Lox485sensor" V="112" U="0f4f25ec-03d7-0393-ffff50dfea156200" Title="R1 DS2438 Temp" Cl="0,0,0" Nio="2" WF="16400" Check="rail1 1w 2612c3102004f \v" Signed="true" Analog="true" SourceValHigh="100" DestValHigh="100" MinVal="-10000" MaxVal="10000">
 						<Co K="AQ" U="0f4f25ec-03d7-0391-ffff76122898e223"/>
@@ -766,7 +766,7 @@
 		<C Type="Program" V="112" U="0f4f2104-0381-8433-ffff50dfea156200" Title="Railduino UDP 485" Ref="0f4f2104-035f-83a6-ffff50dfea156200" WF="16384">
 			<C Type="Page" V="112" U="0f4f2104-0395-84e5-ffff50dfea156200" Title="Komunikace 485" WF="16384">
 				<IoData Cr="0f4f2104-032f-8278-ffff50dfea156200" Pr="0f4f2104-0382-8437-ffff50dfea156200" Ugr="0f4f2104-035f-839e-ffff50dfea156200" Ugx="0f4f2104-035f-839e-ffff50dfea156200"/>
-				<C Type="InputRef" V="112" U="0f4f21ad-0233-8f99-ffff50dfea156200" Title="R1 DI1" Px="3840" Py="2880" Px2="5952" Py2="3072" Cl="238,238,238" Nio="4" Ref="0f4f21aa-0327-8df5-ffff50dfea156200" LinkRefType="111">
+				<C Type="InputRef" V="112" U="0f4f21ad-0233-8f99-ffff50dfea156200" Title="R1 DI1" Px="3840" Py="2880" Px2="5952" Py2="3072" Cl="238,238,238" Nio="4" Ref="0f4f21aa-0327-8df5-ffff50dfea156200" Analog="true" LinkRefType="111">
 					<Co K="AI" Nc="1" U="0f4f21ad-0233-8f95-ffff1fcf63abfcfe">
 						<In Input="0f4f21aa-0327-8df3-ffff0b6a1c0ae553"/>
 					</Co>
