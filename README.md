@@ -32,6 +32,12 @@ UDP / 485 syntax:
      - relay on command:               rail1 do12 on
      - relay off command:              rail1 do5 off
      - pwm output command:             rail1 pwm1 255
+     - status command:                 rail1 stat10
+     - reset command:                  rail1 rst
+   
+   - scan cycles:
+     - 1wire cycle:                    30000 ms
+     - analog input cycle:             30000 ms
 
 In addition 485 syntax must have \n symbol at the end of the command line
 
@@ -47,24 +53,23 @@ Communication settings
 - UDP - LAN
   - UDP receiving port                           55555
   - UDP outgoing port                            44444
-  - IP address   192.168.150.15x
+  - IP address                               192.168.150.15x
+  - Loxone virtual outputs address    /dev/udp/255.255.255.255/44444
 
 Quick start:
 ----------------------
 
 To start using Railduino with UDP / 485 broadcasts you need to reflash Railduino firmware with this custom one and change
-your Loxone Config to create new inputs and outputs etc... (you should found example for Loxone in example_loxone folder)
+your Loxone Config to create new inputs and outputs etc... 
 
 Uploading custom firmware to your Railduino (easy way):
 
 - download uploader utility "uploader.zip" from the uploader folder and unzip
-- download version of zip file you want to upload to your Railduino and unzip into the same folder as the uploader file
-  - for Ethernet version choose file railduino_udp_485_official/Railduino_1_3_485_UDP.zip
-  - for no Ethernet version choose file railduino_RS485_official/Railduino_1_3_485.zip
+- download Railduino_1_3_485.ino.mega.hex file
 - disassemble railduino din case to get to the usb port (if not accesible from outside)
 - connect railduino to PC with standard A-B usb cable
 - run RAILDUINO HEX UPLOAD.bat file
   - write the com port which the railduino is connected to - e.g. COM18
-  - write file name which you want to upload - e.g. Railduino_1_3_485.ino.mega.hex
+  - write file name which you want to upload - Railduino_1_3_485.ino.mega.hex
   - upload the firmware - after succesfull upload you should see table of stats with the press key to continue...
   
