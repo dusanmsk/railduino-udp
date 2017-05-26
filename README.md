@@ -14,8 +14,10 @@ Key features:
 - USB – programming purposes
 - Ethernet – LAN (optional)
 - LED diode
-- Reset button
-- DIP switch
+- Reset button / remote reset
+- Ping function
+- IP address - static or dynamic
+- DIP switch - address
 - Terminator jumper
 
 UDP / 485 syntax:
@@ -38,6 +40,7 @@ UDP / 485 syntax:
    - scan cycles:
      - 1wire cycle:                    30000 ms
      - analog input cycle:             30000 ms
+     - heart beat cycle(only RS485):   60000 ms
 
 In addition 485 syntax must have \n symbol at the end of the command line
 
@@ -53,8 +56,10 @@ Communication settings
 - UDP - LAN
   - UDP receiving port                           55555
   - UDP outgoing port                            44444
-  - IP address                               192.168.150.15x
+  - static IP address                            192.168.150.15x
+  - dynamic DHCP IP address
   - Loxone virtual outputs address    /dev/udp/255.255.255.255/44444
+  - Loxone virtual inputs port    55555
 
 Quick start:
 ----------------------
@@ -72,4 +77,5 @@ Uploading custom firmware to your Railduino (easy way):
   - write the com port which the railduino is connected to - e.g. COM18
   - write file name which you want to upload - Railduino_1_3_485.ino.mega.hex
   - upload the firmware - after succesfull upload you should see table of stats with the press key to continue...
+- if not succesful please remove the Arduino mega board from the ethernet shield and try again
   
