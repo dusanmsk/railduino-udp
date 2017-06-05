@@ -70,7 +70,8 @@ your Loxone Config to create new inputs and outputs etc...
 Uploading custom firmware to your Railduino (easy way):
 
 - download uploader utility "uploader.zip" from the uploader folder and unzip
-- download Railduino_1_3_485.ino.mega.hex file
+- in case of 485 version download Railduino_1_3_485.ino.mega.hex file
+- in case of UDP version download Railduino_1_3_485_UDP.ino.mega.hex file
 - disassemble railduino din case to get to the usb port (if not accesible from outside)
 - connect railduino to PC with standard A-B usb cable
 - run RAILDUINO HEX UPLOAD.bat file
