@@ -38,8 +38,8 @@
 
 //#define dbg(x) Serial.println(x);
 #define dbg(x);
-//#define ethOn 0
-#define ethOn 1
+// UDP = ethOn 1   485 = ethOn 0
+#define ethOn 0
 
 
 #include <OneWire.h>
@@ -197,18 +197,19 @@ void setup() {
         dbg("Failed to configure Ethernet using DHCP, using Static Mode");
         Ethernet.begin(mac, listenIpAddress);
       }
+         
+      udpRecv.begin(listenPort);
+      udpSend.begin(sendPort);
+
+      dbg("IP: ");
+      printIPAddress();
     }
-    
-    udpRecv.begin(listenPort);
-    udpSend.begin(sendPort);
 
     pinMode(serialTxControl, OUTPUT);
     digitalWrite(serialTxControl, 0);
 
     dbg("Railduino address: ");
     dbg(boardAddressStr);
-    dbg("IP: ");
-    printIPAddress();
     
     lookUpSensors(); 
 
@@ -242,17 +243,15 @@ void heartBeat() {
     if (!heartBeatTimer.isOver()) { 
       return;
     }  
-
-    if (!ethOn) {
-      heartBeatTimer.sleep(heartBeatCycle);
-      if (ticTac) {
-        sendMsg(heartBeatStr + " 1");
-        ticTac = 0;
-      } else {
-        sendMsg(heartBeatStr + " 0");
-        ticTac = 1;
-      }
-    }
+    
+    heartBeatTimer.sleep(heartBeatCycle);
+    if (ticTac) {
+      sendMsg(heartBeatStr + " 1");
+      ticTac = 0;
+    } else {
+      sendMsg(heartBeatStr + " 0");
+      ticTac = 1;
+    }   
 }
 
 void statusLed() {
@@ -451,10 +450,13 @@ void sendAnaInput(int input, float value) {
 
 void sendMsg(String message) {
     message = railStr + boardAddressStr + " " + message;
-    udpSend.beginPacket(sendIpAddress, loxonePort);
     message.toCharArray(outputPacketBuffer, outputPacketBufferSize);
-    udpSend.write(outputPacketBuffer, message.length());
-    udpSend.endPacket();
+
+    if (ethOn) {
+      udpSend.beginPacket(sendIpAddress, loxonePort);
+      udpSend.write(outputPacketBuffer, message.length());
+      udpSend.endPacket();
+    }
     
     digitalWrite(serialTxControl, 1);     
     Serial1.print(message + "\n");
@@ -543,6 +545,5 @@ void processCommands() {
         }
     }
 }
-
 
 
