@@ -226,8 +226,8 @@ void loop() {
     processOnewire();
 
     statusLed();
-
-    heartBeat();
+    
+    if (!ethOn) { heartBeat();}
 }
 
 void (* resetFunc) (void) = 0; 
