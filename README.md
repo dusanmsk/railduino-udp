@@ -10,7 +10,7 @@ Key features:
 - 3x analog inputs – input voltage 0 - 10V
 - 4x PWM digital outputs – max 25 W / each, max 24V DC
 - 1-wire – DS18B20 or DS2438 sensors 
-- RS485 – e.g. Loxone Modbus or RS485 extension
+- RS485 – e.g. Loxone RS485 extension
 - USB – programming purposes
 - Ethernet – LAN (optional)
 - LED diode
@@ -56,8 +56,8 @@ Communication settings
 - UDP - LAN
   - UDP receiving port                           55555
   - UDP outgoing port                            44444
-  - static IP address                            192.168.150.15x
   - dynamic DHCP IP address
+  - static IP address id there is no DHCP           192.168.150.15x
   - Loxone virtual outputs address    /dev/udp/255.255.255.255/44444
   - Loxone virtual inputs port    55555
 
