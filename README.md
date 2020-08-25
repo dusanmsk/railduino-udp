@@ -1,8 +1,17 @@
-# railduino-udp-485
+Warning - this repo is unmaintained and was forked by Railduino author back to official firmware. Please clone and report issues on official repo project pages -   
 
-New official firmware for Railduino v1.3 based on UDP / 485 broadcasts (LAN / serial bus)
+https://github.com/PavSedl/railduino-udp
 
-UDP / 485 syntax:
+
+
+
+
+
+
+
+
+
+
 ---------------------
  
    - signals:
